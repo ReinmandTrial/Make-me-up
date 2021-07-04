@@ -1,0 +1,68 @@
+html,
+body {
+	direction: rtl;
+  	height: 100%;
+  	font-family: 'Heebo';
+   	font-weight: normal;
+   	font-style: normal;
+  	overflow-x: hidden;
+}
+textarea{
+	resize: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	position: relative;
+}
+.footer {
+	flex: 0 0 auto;
+}
+input,
+textarea { 
+	appearance: none;
+	outline:none 
+}
+
+
+.container{
+  max-width: 1460px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+
+}
+
+.d-flex{
+	display: flex !important;
+}
+
+//Ввод данных конец 
+.burger{
+
+}
+
+.select{
+	position: relative;
+	&__header{
+		cursor: pointer;
+	}
+	&__body{
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	&__input{
+		display: none;
+	}
+}
