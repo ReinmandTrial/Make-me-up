@@ -1,9 +1,13 @@
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover{
     }
     &:focus{
     }
     &-primary {
+        border: 1px solid #1b1b1b;
         &:hover {
             
         }

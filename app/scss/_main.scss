@@ -52,6 +52,7 @@
 .banner {
    background: url('../images/banner_background.png') no-repeat;
    display: flex;
+   justify-content: space-around;
    &__link {
       background: $white;
       width: 65px;
@@ -69,6 +70,46 @@
    .icon-instagram {
       color: $color2;
       font-size: 14px;
+   }
+   &__content{
+      text-align: center;
+   }
+   &__social{
+      position: fixed;
+      left: 66px;
+      top: 540px;
+      z-index: 2;
+   }
+   &__title{
+      margin-top: 66px;
+      font-size: 52px;
+      line-height: 70px;
+      font-weight: 300;
+      text-align: center;
+   }
+   &__sale{
+      font-size: 87px;
+      line-height: 128px;
+      color: $textColor2;
+      font-weight: 300;
+      text-align: center;
+   }
+   &__price{
+      font-size: 24px;
+      line-height: 35px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 33px;
+   }
+   &__price-delet{
+      font-size: 40px;
+      line-height: 59px;
+      margin-left: 18px;
+   }
+   .btn-primary{
+      width: 269px;
+      height: 69px;
+      margin: 0 auto;
    }
 }
 
@@ -123,6 +164,9 @@
    .swiper-container {
       display: flex;
       align-items:center;
+      width: 1068px;
+      margin-right: 0;
+      margin-left: auto;
    }
    .swiper-wrapper {
       display: flex;
@@ -136,6 +180,11 @@
    &__card {
       width: 344px;
       text-align: center;
+      &:hover{
+         .advice__nav{
+            display: block;
+         }
+      }
    }
    &__item {
       border: 1px solid $border2;
@@ -154,10 +203,27 @@
       margin-bottom: 40px;
    }
    &__nav{ 
+      display: none;
       position: absolute;
       bottom: 31px;
       left: 20px;
    }
+   &__nav-slider{
+      padding: 49px 60px 47px 0;
+      position: relative;
+   }
+   &__nav-bg{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      width: max-content;
+      img{
+         height: 100%;
+      }
+   }
+   
    &__press {
       width: 62px;
       height: 62px;
@@ -176,6 +242,7 @@
    }
    &__title {
       margin-bottom: 9px;
+      text-align: center;
    }
    &__nav-title {
       max-width: 263px;
@@ -190,6 +257,7 @@
    }
    .swiper-button-next,
    .swiper-button-prev {
+      cursor: pointer;
       background: transparent;
       width: 62px;
       height: 62px;
@@ -205,6 +273,12 @@
    &__bdo {
       display: flex;
    }
+   &__content{
+      display: flex;
+   }
+   &__price{
+      text-align: center;
+   }
 }
 
 .recommendation {
@@ -215,6 +289,52 @@
          &:not(:last-child) {
             margin-left: 20px;
          }
+      }
+   }
+}
+.discount{
+   &__inside{
+      display: flex;
+   }
+   &__banner{
+      background-image: url('../images/discount-banner.png');
+      background-repeat: no-repeat;
+      width: 704px;
+      height: 733px;
+      padding: 82px 68px 0 0 ;
+   }
+   &__banner-sale{
+      font-size: 95px;
+      line-height: 139px;
+      color: $textColor2;
+      font-weight: 300;
+   }
+   &__banner-title{
+      font-size: 48px;
+      line-height: 65px;
+      font-weight: 300;
+   }
+   &__banner-subtitle{
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 300;
+   }
+   &__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: max-content;
+      margin-left: 0;
+      margin-right: auto;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
+      .advice__item{
+         padding: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 343px;
+         height: 297px;
+         margin-bottom: 12px;
       }
    }
 }

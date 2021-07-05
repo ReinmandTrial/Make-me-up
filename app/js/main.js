@@ -41,7 +41,7 @@ new Swiper ('.swiper-container', {
        sensitivity: 1,
      },
      autoHeight: true, 
-     slidesPerView: 'auto', 
+     slidesPerView: 3, 
      watchOverflow: true, 
      spaceBetween: 19, 
      loop: true, 
