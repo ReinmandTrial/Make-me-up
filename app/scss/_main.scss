@@ -29,3 +29,173 @@
    display: flex;
    justify-content: space-between;
 }
+
+.banner {
+   background: url('../images/banner_background.png') no-repeat;
+   display: flex;
+   &__link {
+      background: $white;
+      width: 65px;
+      height: 65px;
+      border-radius: 90px;
+      box-shadow: 0px 4px 12px 0px #00000014;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+   }
+   .icon-facebook,
+   .icon-instagram {
+      color: $color2;
+      font-size: 14px;
+   }
+}
+
+.section-title {
+   text-align: center;
+   font-weight: 300;
+   color: $color4;
+   margin-bottom: 44px;
+}
+
+.offers {
+   padding: 77px 0px 90px;
+   &__content {
+      display: flex;
+   }
+   &__column {
+      &:not(:first-child) {
+         margin: 0px 20px;
+      }
+   }
+   &__big,
+   &__little {
+      background: $color3;
+      margin: 20px 0px;
+      padding: 40px;
+      display: flex;
+   }
+   &__big {
+      width: 706px;
+      height: 455px;
+   }
+   &__little {
+      width: 706px;
+      height: 277px;
+   }
+   &__description {
+      margin-bottom: 0px;
+      margin-top: auto;
+   }
+   &__description-title {
+      font-size: 32px;
+      font-weight: 300;
+      color: $color4;
+   }
+   &___description-description {
+      color: $color4;
+   }
+}
+
+.advice {
+   padding-bottom: 90px;
+   .swiper-container {
+      display: flex;
+      align-items:center;
+   }
+   .swiper-wrapper {
+      display: flex;
+   }
+   .swiper-slide {
+      width: 344px;
+      &:not(:last-child) {
+         margin-left: 19px;
+      }
+   }
+   &__card {
+      width: 344px;
+      text-align: center;
+   }
+   &__item {
+      border: 1px solid $border2;
+      padding: 22px 40px 90px 17px;
+      display: grid;
+      position: relative;
+      margin-bottom: 20px;
+   }
+   &__prev {
+      text-transform: uppercase;
+      background: $black2;
+      padding: 2px 9px;
+      color: $white;
+      margin-left: 0px;
+      margin-right: auto;
+      margin-bottom: 40px;
+   }
+   &__nav{ 
+      position: absolute;
+      bottom: 31px;
+      left: 20px;
+   }
+   &__press {
+      width: 62px;
+      height: 62px;
+      background: $white;
+      box-shadow: 0px 4px 23px 0px #0000000F;
+      border-radius: 90px;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      &:not(:last-child) {
+         margin-bottom: 12px;
+      }
+      .icon {
+         font-size: 17px;
+      }
+   }
+   &__title {
+      margin-bottom: 9px;
+   }
+   &__nav-title {
+      max-width: 263px;
+      text-align: center;
+      line-height: 53px;
+      margin-bottom: 34px;
+      font-weight: 300;
+   }
+   &__button {
+      display: flex;
+      justify-content: center;
+   }
+   .swiper-button-next,
+   .swiper-button-prev {
+      background: transparent;
+      width: 62px;
+      height: 62px;
+      border-radius: 90px;
+      border: 1px solid $border;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      &:not(:last-child) {
+         margin-right: 13px;
+      }
+   }
+   &__bdo {
+      display: flex;
+   }
+}
+
+.recommendation {
+   padding-bottom: 94px;
+   &__gods {
+      display: flex;
+      .advice__card {
+         &:not(:last-child) {
+            margin-left: 20px;
+         }
+      }
+   }
+}

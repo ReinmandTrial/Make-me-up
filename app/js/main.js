@@ -29,3 +29,22 @@ $('.select__header').on('click',function(){
    //нажатие вне селекта
 
 //select end
+
+
+new Swiper ('.swiper-container', {
+   // навигация, кнопки
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+     mousewheel: { 
+       sensitivity: 1,
+     },
+     autoHeight: true, 
+     slidesPerView: 'auto', 
+     watchOverflow: true, 
+     spaceBetween: 19, 
+     loop: true, 
+     
+   });
+   
