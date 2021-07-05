@@ -24,6 +24,25 @@
    .nav{
       padding: 20px 0 25px;
    }
+   .icon-burger{
+      display: none;
+   }
+   .icon-cart{
+      position: relative;
+      .counter{
+         bottom: 100%;
+         left: 50%;
+      }
+   }
+   .icon{
+      font-size: 22px;
+   }
+   .select__header{
+		.icon{
+			font-size: 12px;
+         margin-left: 6px;
+		}
+   }
 }
 .nav{
    display: flex;
