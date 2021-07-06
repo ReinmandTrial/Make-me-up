@@ -1,3 +1,4 @@
+// const { default: Swiper } = require("swiper");
 
 //select
 $('.select__header').on('click',function(){
@@ -32,7 +33,7 @@ $('.select__header').on('click',function(){
 
 
 new Swiper ('.swiper-container', {
-   // навигация, кнопки
+   // навигация, кнопки.swiper-container--second
      navigation: {
        nextEl: '.swiper-button-next',
        prevEl: '.swiper-button-prev',
@@ -44,7 +45,22 @@ new Swiper ('.swiper-container', {
      slidesPerView: 3, 
      watchOverflow: true, 
      spaceBetween: 19, 
-     loop: true, 
+     loop: true
      
    });
-   
+   new Swiper ('.swiper-container--second', {
+      // навигация, кнопки
+        navigation: {
+          nextEl: '.swiper-button-next--second',
+          prevEl: '.swiper-button-prev--second',
+        },
+        mousewheel: { 
+          sensitivity: 1,
+        },
+        autoHeight: true, 
+        slidesPerView: 3, 
+        watchOverflow: true, 
+        spaceBetween: 19, 
+        loop: true
+        
+      });
