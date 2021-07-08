@@ -238,19 +238,28 @@
    }
    &__item {
       border: 1px solid $border2;
-      padding: 22px 40px 90px 17px;
+      // padding: 22px 40px 90px 17px;
       display: grid;
       position: relative;
       margin-bottom: 20px;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
    &__prev {
       text-transform: uppercase;
       background: $black2;
       padding: 2px 9px;
       color: $white;
-      margin-left: 0px;
-      margin-right: auto;
-      margin-bottom: 40px;
+      // margin-left: 0px;
+      // margin-right: auto;
+      // margin-bottom: 40px;
+      position: absolute;
+      top: 22px;
+      left: 17px;
+      z-index: 1;
    }
    &__nav{ 
       display: none;
