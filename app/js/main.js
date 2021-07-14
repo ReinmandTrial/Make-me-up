@@ -60,6 +60,18 @@ new Swiper ('.swiper-container--second', {
       spaceBetween: 19, 
       loop: true      
 });
+new Swiper ('.catalog__pagination-slider', {
+     navigation: {
+       nextEl: '.catalog__swiper-button-next',
+       prevEl: '.catalog__swiper-button-prev',
+     },
+     mousewheel: { 
+       sensitivity: 1,
+     },
+     autoHeight: true, 
+     slidesPerView: 3, 
+     spaceBetween: 14, 
+});
 
 //popup
    //popup open
@@ -100,3 +112,49 @@ new Swiper ('.swiper-container--second', {
       })
    //popup search text end
 //popup end
+
+//page pagination
+      $('.pagin__cart').on('click',function(){
+         var btn = $(this);
+         var block = btn.closest('.pagin__block');
+         var btns = block.find('.pagin__cart');
+
+         $(btns).each(function(){
+            $(this).removeClass('active');
+         })
+
+         btn.addClass('active');
+      })
+//page pagination end
+
+//toggle block
+$('.toggle-btn').on('click',function(){
+   var btn = $(this);
+   var block = btn.closest('.toggle-block');
+   var body = block.find('.toggle-body');
+   var icon = block.find('.icon');
+
+   block.toggleClass('open');
+   icon.toggleClass('open');
+})
+//toggle block end
+
+//slider
+
+$(document).ready(function () {
+   if ($('body').find('div').hasClass('filter__slider')) {
+       // alert();
+       var slider = $('.slider');
+
+       noUiSlider.create(slider[0], {
+           start: [0, 8],
+           connect: true,
+           range: {
+               'min': 0,
+               'max': 8
+           }
+       });
+       
+   }
+})
+//slider end

@@ -65,6 +65,14 @@ textarea {
 	line-height: 19px;
 	color: $black;
 }
+.content{
+	&__body{
+		.container{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
 .select{
 	position: relative;
 	&.open{
@@ -84,7 +92,7 @@ textarea {
 		position: absolute;
 		top: 100%;
 		right: 0;
-		z-index: 1;
+		z-index: 10;
 		background: $white;
 	}
 	&__input{
@@ -188,3 +196,81 @@ textarea {
 		line-height: 20px;
 	}
 }
+
+// bread crumbs
+.breadCrumbs{
+	font-weight: 300;
+	padding-top: 32px;
+	font-size: 12px;
+	line-height: 18px;
+	.container{
+		display: flex;
+		align-items: center;
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		margin-left: 9px;
+		color: $gray;
+		&:hover{
+			.breadCrumbs__text{
+				text-decoration: underline;
+			}
+		}
+	}
+	&__text{
+		display: block;
+		margin-left: 9px;
+	}
+}
+//bread crumbs end
+
+// page pagination
+.pagin__cart{
+	width: 64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $border;
+	font-size: 14px;
+	line-height: 21px;
+	color: #15161A;
+	box-sizing: border-box;
+	cursor: pointer;
+	&.active{
+		border: 1px solid #e48181;
+	}
+}
+//page pagination end
+//check-box 
+.check__box{
+	display: block;
+	padding-right: 25px;
+	cursor: pointer;
+	height: 100%;
+	&-input{
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		// padding-right: 25px;
+		&:checked + .check__box-style{
+			.icon{
+				display: block;
+			}
+		}
+	}
+	&-style{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: 1px solid $color4;
+		margin-right: -25px;
+		.icon{
+			display: none;
+		}
+	}
+}
+//check-box end
