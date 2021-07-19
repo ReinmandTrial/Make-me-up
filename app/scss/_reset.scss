@@ -49,12 +49,15 @@ select {
   outline: none;
 }
 
-a{
+a,
+button{
   text-decoration: none;
   color: inherit;
+  border: none;
   :focus{
     outline: none;
     text-decoration: none;
     color: inherit;
   }
 }
+
