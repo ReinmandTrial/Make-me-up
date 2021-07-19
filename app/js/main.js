@@ -60,6 +60,17 @@ new Swiper ('.swiper-container--second', {
       spaceBetween: 19, 
       loop: true      
 });
+new Swiper ('.photogallery__swiper-container', {
+   mousewheel: { 
+      sensitivity: 1,
+   },
+   autoHeight: true, 
+   slidesPerView: 'auto', 
+   watchOverflow: true, 
+   spaceBetween: 10, 
+   // loop: true
+
+});
 
 //popup
    //popup open

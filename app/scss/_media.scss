@@ -1,19 +1,92 @@
 // MAX-WIDTH 1600PX breakpoints START
 @media (max-width: 1600px) {
-    
+    .discount {
+        &__banner {
+            width: 604px;
+        }
+    }
+    .advice {
+        .advice__card {
+            width: unset;
+        }
+    }
 }
 
 // MAX-WIDTH 1600PX breakpoints END
 
 // MAX-WIDTH 1399.98PX breakpoints START
 @media (max-width: 1399.98px) {
-    
+    .banner {
+        justify-content: space-between;
+        &__content {
+            margin-right: 30px;
+        }
+    }
+    .discount {
+        .advice__card {
+            width: 265px;
+        }
+        &__content {
+            .advice__item {
+                width: unset;
+            }
+        }
+    }
+    .advice {
+        &__nav-slider {
+            padding: 0px 60px 0px 0px;
+        }
+        &__content {
+            align-items:center;
+        }
+    }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
-  
+  .banner {
+      align-items: center;
+      &__title {
+          margin-top: unset;
+      }
+
+  }
+  .advice {
+    &__content {
+        align-items: center;
+    }
+  }
+  .discount {
+    &__banner {
+        width: 390px;
+        padding: 38px 28px 0px 0px;
+    }
+  }
+  .footer {
+    &__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 31px;
+    }
+    &__column {
+        width: unset;
+        margin-left: 40px;
+        &:first-child,
+        &:last-child {
+            margin-left: unset;
+        }
+    }
+    &__column-first {
+        order: 1;
+        width: 100%;
+        align-items: center;
+        padding-top: 31px;
+    }
+    &__social {
+        margin-top: 31px;
+    }
+  }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
