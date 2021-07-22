@@ -32,18 +32,30 @@ $('.select__header').on('click',function(){
 //select end
 new Swiper ('.swiper-container', {
    // навигация, кнопки.swiper-container--second
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-     },
-     mousewheel: { 
-       sensitivity: 1,
-     },
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },  
+      pagination: {
+         el: '.swiper-pagination',
+         type: 'bullets',
+      },
+      mousewheel: { 
+         sensitivity: 1,
+      },
+      breakpoints: {
+         769: {
+            spaceBetween: 19,
+        },
+         320: {
+            spaceBetween: 7,
+        }
+      },
      autoHeight: true, 
      slidesPerView: 3, 
      watchOverflow: true, 
-     spaceBetween: 19, 
      loop: true
+
 });
 new Swiper ('.swiper-container--second', {
    // навигация, кнопки

@@ -17,9 +17,13 @@
 // MAX-WIDTH 1399.98PX breakpoints START
 @media (max-width: 1399.98px) {
     .banner {
+        align-items:center;
         justify-content: space-between;
         &__content {
             margin-right: 30px;
+        }
+        &__title {
+            margin-top: unset;
         }
     }
     .discount {
@@ -40,18 +44,29 @@
             align-items:center;
         }
     }
+    .offers {
+        &__description {
+            margin-top: 0px;
+            margin-bottom: auto;
+        }
+    }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
-  .banner {
+    .header {
+        .icon-heart {
+            margin-left: 20px;
+        }
+    }
+    .banner {
       align-items: center;
       &__title {
           margin-top: unset;
       }
 
-  }
+    }
   .advice {
     &__content {
         align-items: center;
@@ -62,6 +77,19 @@
         width: 390px;
         padding: 38px 28px 0px 0px;
     }
+  }
+  .offers {
+    &__description-description {
+        display: none;
+    }
+    &__column:not(:first-child) {
+        margin: 0px 8px;
+    }
+    &__big,
+    &__little {
+        margin: 10px 0px;
+    }
+      
   }
   .footer {
     &__content {
@@ -90,9 +118,124 @@
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
+// MAX-WIDTH 1024.98PX breakpoints START
+@media (max-width: 1024.98px) {
+   .header {
+       &__phone {
+           display: none;
+       }
+       &__link {
+           display: none;
+       }
+       .nav {
+           display: none;
+       }
+       &__head {
+           display: none;
+       }
+   }
+}
+// MAX-WIDTH 1024.99PX breakpoints END
+
+
+
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
-   
+   .banner {
+       justify-content: unset;
+       &__img {
+       }
+       .btn-primary {
+           display: none;
+       }
+   }
+    .advice {
+        .container {
+            padding-right: unset;
+        }
+        padding-bottom: 0px;
+        .swiper-container {
+            padding-bottom: 61px;        
+            // width: 377px;
+            width: calc(377px + (752 - 377) * ((100vw - 320px) / (768 - 320)));
+        }
+        &__nav-slider {
+           display: none;
+        }
+        .swiper-pagination {
+            display: flex;
+        }
+        &__item {
+            height: calc(140px + (400 - 140) * ((100vw - 320px) / (768 - 320)));
+        }
+    }
+    .discount {
+        padding-bottom: 32px;
+        &__content {
+            width: 100%;
+            grid-column-gap: 8px;
+            grid-row-gap: 16px;
+        }
+        &__inside {
+            display: block;
+        }
+        &__banner {
+            height: 306px;
+            width: 100%;
+            margin-bottom: 16px;
+            background-size: 100%;
+        }
+        .advice__card {
+            width: unset;
+        }
+    }
+    .recommendation {
+        &__gods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap:  8px;
+            grid-row-gap: 16px;
+            .advice__card:not(:last-child) {
+                margin-left: unset;
+            }
+        }
+    }
+    
+
+    .section-title {
+        margin-bottom: 24px;
+    }
+
+
+    .footer {
+        padding: 20px 0px 36px;
+        &__social {
+            margin-top: unset;
+        }
+        &__content {
+            padding-bottom: unset;
+        }
+        &__column-first {
+            margin-top: 31px;
+            border-top: 1px solid rgba(27,27,27,0.1);
+        }
+        &__column-four {
+            margin-left: unset;
+        }
+        &__column-fifth {
+            margin-top: 31px;
+        }
+        &__down{
+            padding-top: 18px;
+            border-top: unset;
+            max-width: 233px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .logo {
+            display: none;
+        }
+    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
