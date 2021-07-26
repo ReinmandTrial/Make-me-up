@@ -23,24 +23,31 @@
         <div class="header__body">
           <span class="icon icon-cart"><span class="counter">0</span></span>
           <span class="icon icon-heart"></span>
-          <span class="header__link">מועדון מאפרים </span>
-          <span class="header__link">תוכנית שותפים</span>
+          <a class="header__link" href="#">מועדון מאפרים</a>
+          <a class="header__link" href="#">תוכנית שותפים</a>
           <a class="header__logo" href="#">
             <img src="images/logo.png" alt="">
           </a>
           <div class="header__phone">
             <span class="header__phone-num">שירות לקוחות:</span>
-            <span class="header__phone-num">0737-284-824</span>
+            <a class="header__phone-num" href="#">0737-284-824</a>
           </div>
           <span class="icon icon-user"></span>
           <span class="icon icon-search btn-search btn-popup"></span>
-          <span class="icon icon-burger">b</span>
+          <span class="icon icon-burger btn-burger"></span>
         </div>
-        <div class="nav">
+        <div class="nav nav__burger">
+          <div class="nav__icon-close">
+            <span class="icon icon-close btn-burger-close"></span>
+          </div>
+          <div class="nav__burger-link">
+            <a class="header__link" href="#">מועדון מאפרים</a>
+            <a class="header__link" href="#">תוכנית שותפים</a>
+          </div>
           <div class="nav__item select">
             <div class="select__header">
               <span class="icon icon-triangle-down"></span>
-              מבצעים
+              <span class="select__header-title">מבצעים</span>
               <input type="text" class="select__input">
             </div>
             <div class="select__body">
@@ -70,7 +77,7 @@
           <div class="nav__item select">
             <div class="select__header">
               <span class="icon icon-triangle-down"></span>
-              איפור
+              <span class="select__header-title">איפור</span>
               <input type="text" class="select__input">
             </div>
             <div class="select__body">
@@ -98,7 +105,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>טיפוח<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">טיפוח</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -125,7 +132,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span> מזוודות ואביזרים<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">מזוודות ואביזרים</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -152,7 +159,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>אפקטים לקולנוע<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">אפקטים לקולנוע</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -179,7 +186,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>צבעי מים וגוף<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">צבעי מים וגוף</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -206,7 +213,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>פורים<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">פורים</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -233,7 +240,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>נרות ריחניים<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">נרות ריחניים</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -260,7 +267,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>תכשיטים<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">תכשיטים </span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -287,7 +294,7 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header"><span class="icon icon-triangle-down"></span>יצירה DIY<input type="text"
+            <div class="select__header"><span class="icon icon-triangle-down"></span><span class="select__header-title">יצירה DIY</span><input type="text"
                 class="select__input"></div>
             <div class="select__body">
               <div class="nav__item-content">
@@ -314,10 +321,15 @@
             </div>
           </div>
           <div class="nav__item select">
-            <div class="select__header" dir="ltr">מותגים</div>
+            <div class="select__header" dir="ltr"><span class="select__header-title">מותגים</span></div>
+          </div>
+          <div class="header__phone">
+            <span class="header__phone-num">שירות לקוחות:</span>
+            <a class="header__phone-num" href="#">0737-284-824</a>
           </div>
         </div>
       </div>
+      <div class="nav__burger-bg"></div>
     </header>
 
     <!-- HEADER end  -->

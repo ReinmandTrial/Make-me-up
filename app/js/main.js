@@ -70,7 +70,15 @@ new Swiper ('.swiper-container--second', {
       slidesPerView: 3, 
       watchOverflow: true, 
       spaceBetween: 19, 
-      loop: true      
+      loop: true,     
+      breakpoints:{
+         768:{
+            slidesPerView: 3
+         },
+         320: {
+               slidesPerView: 1
+         }
+      } 
 });
 new Swiper ('.photogallery__swiper-container', {
    mousewheel: { 
@@ -180,3 +188,22 @@ $(document).ready(function () {
    }
 })
 //slider end
+
+//burger mobile 
+   $('.btn-burger').on('click',function(){
+      $('.nav__burger').addClass('open');
+      $('.nav__burger-bg').fadeIn();
+   })
+   $('.btn-burger-close').on('click',function(){
+      $('.nav__burger').removeClass('open');
+      $('.nav__burger-bg').fadeOut();
+   })
+   
+   $(document).on('click', function (e) {
+      if (!$(e.target).closest(".nav__burger").length && !$(e.target).closest(".btn-burger").length) {
+         $('.nav__burger').removeClass('open');
+         $('.nav__burger-bg').fadeOut();
+      }
+      e.stopPropagation();
+   });
+//burger mobile end 
