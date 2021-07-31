@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
+  <title>Home page</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,8 +21,80 @@
       </div>
       <div class="container">
         <div class="header__body">
-          <span class="icon icon-cart"><span class="counter">0</span></span>
-          <span class="icon icon-heart"></span>
+
+
+          <span class="icon icon-cart"><span class="counter">0</span>
+          <div class="cart__popup">
+
+            <div class="cart__body">
+
+              <div class="cart__header">
+                <div class="cart__header-title">
+                  <div class="favorites__counter">3</div>
+                  <div class="favorites__description">מוצרים בסל</div>
+                </div>
+                <div class="cart__header-subtitle">
+                  לרוקן את הסל
+                </div>
+              </div>
+
+              <div class="cart__content">
+
+                <div class="favorites__list">
+                  <div class="favorites__item">
+                    <div class="favorites__card">
+                      <div class="favorites__img"><img src="images/favorites.png" alt=""></div>
+                    </div>
+                    <div class="favorites__info">
+                      <div class="favorites__info-title">Spray Fixing פיקסר ספריי לקיבוע האיפור
+                      </div>
+                      <div class="favorites__info-price">₪79</div>
+                    </div>
+                    <span class="icon icon-close"></span>
+                    <div class="amount">
+                      <span class="amount__plus icon icon-plus"></span>
+                      <input value="3" type="text" class="amount__input">
+                      <span class="amount__minus icon icon-minus"></span>
+                    </div>
+                  </div>
+                  <div class="favorites__item">
+                    <div class="favorites__card">
+                      <div class="favorites__img"><img src="images/favorites.png" alt=""></div>
+                    </div>
+                    <div class="favorites__info">
+                      <div class="favorites__info-title">Spray Fixing פיקסר ספריי לקיבוע האיפור
+                      </div>
+                      <div class="favorites__info-price">₪79</div>
+                    </div>
+                    <span class="icon icon-close"></span>
+                    <div class="amount">
+                      <span class="amount__plus icon icon-plus"></span>
+                      <input value="3" type="text" class="amount__input">
+                      <span class="amount__minus icon icon-minus"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart__price">
+                  <div class="cart__price-description">לשלם</div>
+                  <div class="cart__price-cost"> 119.00 ₪ </div>
+                </div>
+
+                <div class="cart__btn">
+                  <button class="blog__more-btn btn btn-primary">ילש לסב הייפצל</button>
+                  <button class="btn-contour btn">לקופה</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          </span>
+
+          
+         
+
+          <span class="icon icon-heart btn-favorites"></span>
           <a class="header__link" href="#">מועדון מאפרים</a>
           <a class="header__link" href="#">תוכנית שותפים</a>
           <a class="header__logo" href="#">
@@ -30,7 +102,7 @@
           </a>
           <div class="header__phone">
             <span class="header__phone-num">שירות לקוחות:</span>
-            <a class="header__phone-num" href="#">0737-284-824</a>
+            <a class="header__phone-num header__phone-num__number" href="#">0737-284-824</a>
           </div>
           <span class="icon icon-user"></span>
           <span class="icon icon-search btn-search btn-popup"></span>
@@ -340,21 +412,26 @@
       <div class="content">
 
         <div class="banner">
-          <div class="banner__content">
-            <h1 class="banner__title">
-              קרם יום/לחות
-            </h1>
-            <p class="banner__sale">
-              30% הנחה
-            </p>
-            <p class="banner__price"> <span class="banner__price-delet"> 4.00 ₪</span> <span
-                class="banner__price-sale">6.00 ₪</span> </p>
-            <a class="btn btn-primary">לקנייה</a>
-          </div>
-          <div class="banner__img"><img src="images/banner-girl.png" alt="img"></div>
-          <div class="banner__social">
-            <a class="banner__link" href="#"><span class="icon icon-facebook"></span></a>
-            <a class="banner__link" href="#"><span class="icon icon-instagram"></span></a>
+          <div class="container">
+            <div class="banner__content">
+              <h1 class="banner__title">
+                קרם יום/לחות
+              </h1>
+              <p class="banner__sale">
+                30% הנחה
+              </p>
+              <p class="banner__price"> <span class="banner__price-delet"> 4.00 ₪</span> <span
+                  class="banner__price-sale">6.00 ₪</span> </p>
+              <a class="btn btn-primary">לקנייה</a>
+            </div>
+
+            <div class="banner__img"><img src="images/banner-girl.png" alt="img"></div>
+
+
+            <div class="banner__social">
+              <a class="banner__link" href="#"><span class="icon icon-facebook"></span></a>
+              <a class="banner__link" href="#"><span class="icon icon-instagram"></span></a>
+            </div>
           </div>
         </div>
 
@@ -378,7 +455,7 @@
                     <p class="offers__description-description h4"> צבעים זוהרים - שבלונות - קעקועים</p>
                   </div>
                   <div class="offers__img">
-                    <img src="images/offers-4.svg" alt="">
+                    <img src="images/offers-4.png" alt="">
                   </div>
                 </div>
               </div>
@@ -404,10 +481,11 @@
               </div>
             </div>
           </div>
+          <div class="offers__mobile-bg"><img src="images/offers__mobile-bg.png" alt="bg"></div>
         </div>
 
         <div class="advice">
-          <div class="container">
+          <div class="container advice__container-wrapper">
             <div class="advice__content">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -470,6 +548,7 @@
               </div>
             </div>
           </div>
+          <div class="advice__mobile-bg"><img src="images/advice__mobile-bg.png" alt="bg"></div>
         </div>
 
         <div class="discount">
@@ -531,6 +610,8 @@
             </div>
           </div>
           <div class="discount__banner-bg"><img src="images/discount-banner-bg.png" alt=""></div>
+          <div class="discount__mobile-bg-left"><img src="images/discount__mobile-bg-left.png" alt=""></div>
+          <div class="discount__mobile-bg-right"><img src="images/discount__mobile-bg-right.png" alt=""></div>
         </div>
 
         <div class="recommendation">
@@ -591,6 +672,8 @@
           </div>
           <div class="recommendation-bg"><img src="images/discount-banner-bg-second.png" alt=""></div>
           <div class="recommendation-bg-second"><img src="images/rec-second.png" alt=""></div>
+          <div class="recommendation__mobile-bg-top"><img src="images/recommendation__mobile-bg-top.png" alt=""></div>
+          <div class="recommendation__mobile-bg-bottom"><img src="images/recommendation__mobile-bg-bottom.png" alt=""></div>
         </div>
 
         <div class="blog">
@@ -644,6 +727,8 @@
               <button class="blog__more-btn btn btn-primary">לכל הקורסים</button>
             </div>
           </div>
+          <div class="blog__mobile-bg-top"><img src="images/blog__mobile-bg-top.png" alt=""></div>
+          <div class="blog__mobile-bg-bottom"><img src="images/blog__mobile-bg-bottom.png" alt=""></div>
         </div>
 
         <div class="articles">
@@ -722,6 +807,8 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-pagination">
+                </div>
               </div>
               <div class="advice__nav-slider">
                 <p class="advice__nav-title h2">מאת שלי אגמי סרטונים והדרכות איפור </p>
@@ -795,6 +882,7 @@
           <div class="photogallery-bg-right"><img src="images/photo-right.png" alt=""></div>
           <div class="photogallery-bg-center"><img src="images/photo-center.png" alt=""></div>
           <div class="photogallery-bg-left"><img src="images/photo-left.png" alt=""></div>
+          <div class="photogallery__mobile-bg"><img src="images/photogallery__mobile-bg.png" alt=""></div>
         </div>
 
       </div>
@@ -874,6 +962,62 @@
         </div>
       </div>
       <!-- POPUP END  -->
+       <!-- favorites  -->
+       <div class="favorites">
+        <div class="favorites__content">
+          <div class="favorites__body">
+            <div class="favorites__header">
+              <span class="icon icon-close btn-favorites__close favorites__close"></span>
+              <div class="favorites__title">
+                <div class="favorites__description">רשימת המשאלות שלי</div>
+                <div class="favorites__counter">3</div>
+              </div>
+            </div>
+            <div class="favorites__list">
+              <div class="favorites__item">
+                <div class="favorites__card">
+                  <div class="favorites__img"><img src="images/favorites.png" alt=""></div>
+                </div>
+                <div class="favorites__info">
+                  <div class="favorites__info-title">Spray Fixing פיקסר ספריי לקיבוע האיפור
+                  </div>
+                  <div class="favorites__info-price">₪79</div>
+                </div>
+                <span class="icon icon-close"></span>
+                <a href="#" class="advice__press"><span class="icon icon-cart"></span></a>
+              </div>
+              <div class="favorites__item">
+                <div class="favorites__card">
+                  <div class="favorites__img"><img src="images/favorites.png" alt=""></div>
+                </div>
+                <div class="favorites__info">
+                  <div class="favorites__info-title">Spray Fixing פיקסר ספריי לקיבוע האיפור
+                  </div>
+                  <div class="favorites__info-price">₪79</div>
+                </div>
+                <span class="icon icon-close"></span>
+                <a href="#" class="advice__press"><span class="icon icon-cart"></span></a>
+              </div>
+              <div class="favorites__item">
+                <div class="favorites__card">
+                  <div class="favorites__img"><img src="images/favorites.png" alt=""></div>
+                </div>
+                <div class="favorites__info">
+                  <div class="favorites__info-title">Spray Fixing פיקסר ספריי לקיבוע האיפור
+                  </div>
+                  <div class="favorites__info-price">₪79</div>
+                </div>
+                <span class="icon icon-close"></span>
+                <a href="#" class="advice__press"><span class="icon icon-cart"></span></a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="favorites__bg"></div>
+        </div>
+      </div>
+    <!-- favorites  end -->
+
     </main>
     <!-- MAIN end -->
 
@@ -907,13 +1051,15 @@
           <div class="footer__column footer__column-third">
             <div class="footer__list">
               <a href="#" class="footer__link h5">אודות</a>
-              <a href="#" class="footer__link h5">שומיש יאנת</a>
-              <a href="#" class="footer__link h5">תויטרפה תוינידמ</a>
+              <a href="#" class="footer__link h5">תנאי שימוש</a>
+              <a href="#" class="footer__link h5">מדיניות הפרטיות</a>
             </div>
             <div class="footer__gift">
               <a href="" class="footer__gift-link"><img src="images/footer__gift.png" alt=""></a>
             </div>
           </div>
+
+          <hr class="footer__hr">
 
           <div class="footer__column footer__column-four">
             <div class="footer__list">
@@ -925,6 +1071,8 @@
             <p class="footer__discr h5">איסוף עצמי מראשל"צ בתיאום מראש</p>
             <a href="mailto:info@makemeup.co.il" class="footer__mail h5">info@makemeup.co.il</a>
           </div>
+
+          <hr class="footer__hr">
 
           <div class="footer__column footer__column-fifth">
             <p class="footer__form-title">הצטרפו אלינו</p>

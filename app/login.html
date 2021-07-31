@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Шаблон</title>
+  <title>login</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -407,17 +407,57 @@
     <!-- HEADER end  -->
 
     <!-- MAIN start  -->
-    <main class="main">
+    <main class="main login">
 
 
       <!-- CONTENT start  -->
       <div class="content">
-
+        <div class="login-title">
+          <div class="container">
+            <div class="login-title__content">החשבון שלי</div>
+          </div>
+        </div>
+        <div class="login-body">
+          <div class="container">
+            <div class="login-body__content">
+              <div class="login-body__forms">
+                <div class="login-body__title">כניסה לחשבון</div>
+                <div class="log-bar">
+                  <input class="log-bar__input" type="text" placeholder="דוא“ל">
+                </div>
+                <div class="log-bar">
+                  <input class="log-bar__input" type="text" placeholder="סיסמה">
+                </div>
+                <div class="login-body__password">שכחתי סיסמה</div>
+                <button class="btn btn-contour">התחברות</button>
+                <div class="login-body__remember">
+                  <p class="login-body__remember-text">זכור אותי</p>
+                </div>
+              </div>
+              <div class="login-body__signup">
+                <div class="login-body__signup-content">
+                  <div class="login-body__signup-title">עדיין לא רשומה?</div>
+                  <p class="login-body__signup-subtitle">הרשמה ללקוחות חדשים</p>
+                  <button class="btn blog__more-btn btn-primary">להרשמה</button>
+                </div>
+                <div class="login-body__signup-top"><img src="images/login-body-top.png" alt=""></div>
+                <div class="login-body__signup-bottom"><img src="images/login-body-bottompng.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login-birthday">
+          <div class="container">
+            <div class="login-birthday__content">
+              <a href="#" class="login-birthday__link">לקוחה יקרה, להצטרפות למועדון הלקוחות שלנו )ללא עלות( לקבלת הטבה מפנקת ליום ההולדת! ולפינוקים בלעדיים לחברות בלבד – לחצו כאן</a>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- CONTENT end -->
 
        <!-- POPUP  -->
-       <div class="popup popup-search">
+      <div class="popup popup-search">
         <div class="popup__body">
            <div class="popup__content">
               <span class="icon icon-close popup-close"></span>
@@ -489,9 +529,9 @@
               </div>
            </div>
         </div>
-     </div>
-     <!-- favorites  -->
-   <div class="favorites">
+      </div>
+      <!-- favorites  -->
+      <div class="favorites">
         <div class="favorites__content">
           <div class="favorites__body">
             <div class="favorites__header">
@@ -544,9 +584,9 @@
           <div class="favorites__bg"></div>
         </div>
       </div>
-    <!-- favorites  end -->
-     <!-- POPUP END  --
-    </main>
+      <!-- favorites  end -->
+      <!-- POPUP END  -->
+      </main>
     <!-- MAIN end -->
 
     <!-- FOOTER start  -->

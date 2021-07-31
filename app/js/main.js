@@ -45,9 +45,13 @@ new Swiper ('.swiper-container', {
       },
       breakpoints: {
          769: {
-            spaceBetween: 19,
+            spaceBetween: 20,
+        },
+        576: {
+           slidesPerView: 'auto',
         },
          320: {
+            slidesPerView: 2.5,
             spaceBetween: 7,
         }
       },
@@ -62,6 +66,10 @@ new Swiper ('.swiper-container--second', {
       navigation: {
          nextEl: '.swiper-button-next--second',
          prevEl: '.swiper-button-prev--second',
+      },  
+      pagination: {
+         el: '.swiper-pagination',
+         type: 'bullets',
       },
       mousewheel: { 
          sensitivity: 1,
@@ -69,7 +77,7 @@ new Swiper ('.swiper-container--second', {
       autoHeight: true, 
       slidesPerView: 3, 
       watchOverflow: true, 
-      spaceBetween: 19, 
+      spaceBetween: 20, 
       loop: true,     
       breakpoints:{
          768:{
@@ -87,8 +95,24 @@ new Swiper ('.photogallery__swiper-container', {
    autoHeight: true, 
    slidesPerView: 'auto', 
    watchOverflow: true, 
-   spaceBetween: 10, 
+   spaceBetween: 20, 
    // loop: true
+   breakpoints:{ 
+      576: {
+         slidesPerView: 'auto'
+      },
+      435: {
+         slidesPerView: 4
+      },
+      375: {
+         slidesPerView: 3.5,
+         spaceBetween: 10
+      },
+      320: {
+         slidesPerView: 3,
+         spaceBetween: 15
+      }
+   }
 });
 new Swiper ('.catalog__pagination-slider', {
      navigation: {
@@ -207,3 +231,19 @@ $(document).ready(function () {
       e.stopPropagation();
    });
 //burger mobile end 
+
+$('.btn-favorites').on('click',function(){
+   $('.favorites').fadeIn();
+   $('.favorites').addClass('open');
+})
+$('.btn-favorites__close').on('click',function(){
+   $(this).closest('.favorites').fadeOut();
+   $(this).closest('.favorites').removeClass('open');
+})
+$(document).on('click', function (e) {
+   if (!$(e.target).closest(".btn-favorites").length && !$(e.target).closest(".favorites__body").length) {
+      $('.favorites').fadeOut();
+      $('.favorites').removeClass('open');
+   }
+   e.stopPropagation();
+});
