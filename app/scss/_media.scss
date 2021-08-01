@@ -1,3 +1,11 @@
+@media (max-height: 920px) {
+    .banner {
+        &__social {
+            top: 300px;
+        }
+    }
+}
+
 // MAX-WIDTH 1600PX breakpoints START
 @media (max-width: 1600px) {
     .discount {
@@ -410,6 +418,7 @@
     .articles {
         .swiper-pagination {
             margin-top: 18px;
+            display: flex;
         }
     }
 

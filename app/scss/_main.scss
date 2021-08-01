@@ -7,6 +7,9 @@
       height: 30px;
       font-weight: 300;
       align-items: center;
+      font-size: 14px;
+      color: $color4;
+      line-height: 26px;
    }
    &__body{
       display: flex;
@@ -221,6 +224,7 @@
       margin-right: 24px;
       font-size: 14px;
       transition: 0.3s;
+      color: $color4;
       &:hover {
          color: $textColor2;
       }
@@ -272,6 +276,7 @@
    // justify-content: space-around;
    position: relative;
    height: 607px;
+   background-size: 100%;
    .container {
       height: 100%;
    }
@@ -783,6 +788,7 @@
    background-repeat: no-repeat;
    padding: 97px 0 ;
    position: relative;
+   background-size: 100%;
    .h2{
       text-align: center;
       margin-bottom: 41px;
@@ -889,6 +895,9 @@
       &:hover {
          border: 1px solid $color4;
       }
+   }
+   .swiper-pagination {
+      display: none;
    }
    &-bg-right {
       position: absolute;
@@ -1499,6 +1508,33 @@
 
 .login {
 }
+.signup {
+   .login-body__title {
+      margin-bottom: 29px;
+      margin-top: 35px;
+   }
+   .login-body__content {
+      align-items: unset;
+   }
+   .login-body__signup {
+      height: 100%;
+   }
+}
+.signup-law {
+   margin: 35px 0px 57px 0px;
+   &__paragraph {
+      &:not(:last-child) {
+         margin-bottom: 18px;
+      }
+   }
+   &__description {
+      font-size: 12px;
+      line-height: 18px;
+      color: $color4;
+      margin-right: 18px;
+      max-width: 293px;
+   }
+}
 
 .login-title {
    margin-top: 40px;
@@ -1516,9 +1552,13 @@
    &__content {
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
    &__forms {
       width: 335px;
+   }
+   &__forms-second {
+      margin-top: 96px;
    }
    &__password {
       font-size: 12px;
@@ -1551,6 +1591,16 @@
       font-size: 14px;
       line-height: 19px;
       font-weight: 300; 
+      margin-right: 11px;
+   }
+   &__frame {
+      display: flex;
+      .login-body__forms {
+
+         &:not(:first-child) {
+            margin-right: 59px;
+         }
+      }
    }
 
 }
@@ -1578,6 +1628,41 @@
          font-size: 12px;
          line-height: 18px;
       }
+   }
+   &__body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .log-bar {
+         width: calc(100% / 3 - 20px / 2);
+      }
+   }
+   &__flesh {
+      .log-bar {
+         padding-top: 31px;
+      }
+   }
+   &__flesh-title {
+      font-size: 14px;
+      line-height: 21px;
+      color:$color4;
+      margin-top: 75px;
+   }
+   &__input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+   }
+   &__input-placeholder {
+      font-size: 12px;
+      line-height: 18px;
+      color: $color4;
+   }
+   .icon-triangle-down {
+      font-size: 12px;
+      color: $gray;
+      margin-left: 6px;
    }
 }
 
