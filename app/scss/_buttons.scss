@@ -18,7 +18,6 @@
     &-secondary{
         background: $background;
         &:hover{
-            
         }
     }
     &-contour{
@@ -28,7 +27,7 @@
         background: $background;
         padding: 13.5px 76px;
         &:hover{
-            
+            background: #F4DDD8;
         }
     }
     &-filter{

@@ -61,6 +61,21 @@ new Swiper ('.swiper-container', {
      loop: true
 
 });
+new Swiper ('.blog__slider', {
+   navigation: {
+      prevEl: '.blog__swiper-btn-next',
+      nextEl: '.blog__swiper-btn-prev',
+   },  
+   mousewheel: { 
+      sensitivity: 1,
+   },
+   // autoHeight: true, 
+   slidesPerView: 3, 
+   watchOverflow: true, 
+   spaceBetween: 20, 
+   loop: true,
+   mousewheelControl: false
+})
 new Swiper ('.swiper-container--second', {
    // навигация, кнопки
       navigation: {
@@ -247,3 +262,25 @@ $(document).on('click', function (e) {
    }
    e.stopPropagation();
 });
+
+
+// amount 
+   $('.amount__plus').on('click',function(){
+      var btn = $(this);
+      var Block = btn.closest('.amount');
+      var kol = Block.find('.amount__input').val();
+      if(kol<= 100){
+         kol++;
+      }
+      Block.find('.amount__input').val(kol);
+   })
+   $('.amount__minus').on('click',function(){
+      var btn = $(this);
+      var Block = btn.closest('.amount');
+      var kol = Block.find('.amount__input').val();
+      if(kol > 0){
+         kol--;
+      }
+      Block.find('.amount__input').val(kol);
+   })
+//amount end 

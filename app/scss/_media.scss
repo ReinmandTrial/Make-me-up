@@ -132,9 +132,9 @@
     &__description-description {
         // display: none;
     }
-    &__column:not(:first-child) {
-        margin: 0px 8px;
-    }
+    // &__column:not(:first-child) {
+    //     margin: 0px 8px;
+    // }
     &__big,
     &__little {
         margin: 10px 0px;
@@ -327,9 +327,15 @@
     .offers {
         &__big {
             height: calc(197px + (455 - 197) * ((100vw - 320px) / (991 - 320)));
+            margin: 0;
         }
         &__little {
             height: calc(156px + (277 - 156) * ((100vw - 320px) / (991 - 320)));
+            margin: 0;
+        }
+        &__first,
+        &__third{
+            margin-bottom: 10px;
         }
    }
     .advice {
