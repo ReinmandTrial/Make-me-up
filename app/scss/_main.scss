@@ -1011,6 +1011,18 @@
 .footer {
    background: $background;
    padding: 69px 0px 44px;
+   position: relative;
+   .btn__move{
+      position: absolute;
+      top: 195px;
+      left: 55px;
+      z-index: 1;
+      color: $color2;
+      .icon{
+         transform: rotate(-90deg);
+      }
+
+   }
    &__hr {
       display: none;
       width: 200%;
@@ -1766,5 +1778,83 @@
       line-height: 19px;
       color: $color4;
       text-decoration: underline;
+   }
+}
+.profile-main{
+   .content{
+      display: flex;
+   }
+}
+.rightSide{
+   width: 28%;
+   background: $color3;
+   height: 100%;
+   &__main{
+      width: 330px;
+      margin-right: auto;
+      padding-right: 15px;
+   }
+   .title{
+      margin: 55px 0 33px;
+      font-weight: 300;
+   }
+   .balance{
+      margin-bottom: 75px;
+   }
+   .balance__title{
+      margin-bottom: 13px;
+   }
+   .nav{
+      display: block;
+   }
+   .nav__item{
+      &:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+   .nav__link{
+      color: $black;
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 300;
+      &.active{
+         font-weight: 400;
+         position: relative;
+         &::after{
+            content: '';
+            position: absolute;
+            top: calc(50% - 1px);
+            right: -13px;
+            z-index: 1;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background: $color4;
+         }
+      }
+   }
+}
+.leftSide{
+   height: 200px;
+   width: 72%;
+}
+.balance{
+   &__title{
+      font-weight: 300;
+      color: $gray;
+   }
+   .icon{
+      float: right;
+      margin-left: 15px;
+      font-size: 18px;
+      color: $color4;
+   }
+   &__body{
+   }
+   &__money{
+      font-weight: 300;
+      color: $color4;
+      font-size: 20px;
+      line-height: 27px;
    }
 }
