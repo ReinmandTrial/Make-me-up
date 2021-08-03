@@ -259,6 +259,8 @@ textarea {
 		&:checked + .check__box-style{
 			.icon{
 				display: block;
+				font-size: 13px;
+    			margin-top: 2px;
 			}
 		}
 	}
