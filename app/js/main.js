@@ -141,6 +141,19 @@ new Swiper ('.catalog__pagination-slider', {
      slidesPerView: 3, 
      spaceBetween: 14, 
 });
+new Swiper ('.search__noresult-swiper-container', {
+   // навигация, кнопки
+     navigation: {
+       nextEl: '.search__noresult-swiper-button-next',
+       prevEl: '.search__noresult-swiper-button-prev',
+     },  
+     mousewheel: { 
+       sensitivity: 1,
+     },
+     autoHeight: true, 
+     spaceBetween: 20, 
+     slidesPerView: 4,  
+});
 
 //popup
    //popup open

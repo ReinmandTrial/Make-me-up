@@ -3,15 +3,16 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s;
     &:hover{
     }
     &:focus{
     }
     &-primary {
-        border: 1px solid #1b1b1b;
+        border: 1px solid $color4;
         background: $white;
         &:hover {
-            background: $color3;
+            background: $color4;
             color: $white;
         }
     }
@@ -41,6 +42,21 @@
         font-weight: 500;
         color: $white;
         border: none;
+    }
+    &-swiper {
+        width: 62px;
+        height: 62px;
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid $border;
+        &:hover {
+           border: 1px solid $color4;
+        }
     }
 }
 

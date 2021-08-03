@@ -21,6 +21,12 @@
             width: unset;
         }
     }
+    .recommendation {
+        &__gods {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 // MAX-WIDTH 1600PX breakpoints END
