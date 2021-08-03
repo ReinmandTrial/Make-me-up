@@ -683,17 +683,20 @@
    padding-bottom: 74px;
    position: relative;
    &__gods {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-content: center;
-      margin-bottom: -20px;
+      // margin-bottom: -20px;
+      margin: -10px;
       .advice__card {
-         &:not(:last-child) {
-            margin-left: 20px;
-         }
+         // &:not(:last-child) {
+         //    margin-left: 20px;
+         // }
       }
    }
    .advice__card {
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
+      margin: 10px;
    }
    .swiper-container {
       width: 1068px;
@@ -728,6 +731,7 @@
       width: 704px;
       height: 733px;
       padding: 82px 68px 0 0 ;
+      display: block;
    }
    &__banner-sale{
       font-size: 95px;
@@ -1858,3 +1862,83 @@
       line-height: 27px;
    }
 }
+
+.search {
+   .recommendation {
+      padding-bottom: unset;
+   }
+   &__title {
+      font-size: 16px;
+      line-height: 22px;
+      color: $color4;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      margin: 59px 0px 61px 0px;
+   }
+   &__result {
+      color: $gray;
+      margin-left: 9px;
+   }
+   &__product-name {
+      text-decoration: underline;
+      margin-left: 8px;
+   }
+   .advice__card {
+      margin: 45px 10px;
+   }
+   .recommendation__gods {
+      margin: -45px -10px 104px -10px;
+   }
+   &__more {
+      margin-bottom: 138px;
+   }
+   .btn-primary {
+      padding: 13px 35px 14px 35px;
+      margin: 0 auto;
+   }
+   &__noresult {
+      margin: 145px 0px 106px 0px;
+   }
+   &__noresult-img {
+      width: 67px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 42px;
+      margin-left: auto;
+      margin-right: auto ;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__noresult-title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 300;
+      color: $color4;
+      display: flex;
+      justify-content: center;
+   }
+   &__noresult-swiper-container {
+      overflow: hidden;
+      .advice__card {
+         margin: 0px;
+      }
+   }
+   &__noresult-swiper-button {
+      display: flex;
+      margin: 0 auto;
+      width: max-content;
+      margin-top: 87px;
+      margin-bottom: 285px;
+      button {
+         &:not(:first-child) {
+            margin-right: 20px;
+         }
+      }
+   }
+
+}
+
