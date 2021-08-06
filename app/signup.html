@@ -33,9 +33,9 @@
                   <div class="favorites__counter">3</div>
                   <div class="favorites__description">מוצרים בסל</div>
                 </div>
-                <div class="cart__header-subtitle">
+                <a class="cart__header-subtitle" href="#">
                   לרוקן את הסל
-                </div>
+                </a>
               </div>
 
               <div class="cart__content">
@@ -463,7 +463,13 @@
                   </div>
                   <button class="btn btn-contour">התחברות</button>
                   <div class="login-body__remember">
-                    <p class="login-body__remember-text">זכור אותי</p>
+                    <label class="check__box">
+                          <input type="checkbox" class="check__box-input">
+                          <span class="check__box-style">
+                                <span class="icon icon-check"></span>
+                          </span>
+                          <span class="login-body__remember-text">זכור אותי</span>
+                    </label>
                   </div>
                 </div>
                 <div class="login-body__forms login-body__forms-second">
@@ -511,8 +517,8 @@
               </div>
               <div class="login-body__signup">
                 <div class="login-body__signup-content">
-                  <div class="login-body__signup-title">עדיין לא רשומה?</div>
-                  <p class="login-body__signup-subtitle">הרשמה ללקוחות חדשים</p>
+                  <div class="login-body__signup-title">כבר רשומה?</div>
+                  <p class="login-body__signup-subtitle">התחברי לחשבונך</p>
                   <button class="btn blog__more-btn btn-primary">להרשמה</button>
                 </div>
                 <div class="login-body__signup-top"><img src="images/login-body-top.png" alt=""></div>
@@ -524,7 +530,8 @@
         <div class="login-birthday">
           <div class="container">
             <div class="login-birthday__content">
-              <a href="#" class="login-birthday__link">לקוחה יקרה, להצטרפות למועדון הלקוחות שלנו )ללא עלות( לקבלת הטבה מפנקת ליום ההולדת! ולפינוקים בלעדיים לחברות בלבד – לחצו כאן</a>
+              <span class="login-birthday__link">לקוחה יקרה, להצטרפות למועדון הלקוחות שלנו )ללא עלות( לקבלת הטבה מפנקת ליום ההולדת! ולפינוקים בלעדיים לחברות בלבד-</span>
+              <a class="login-birthday__link" href=""> לחצו כאן </a>
             </div>
           </div>
         </div>
@@ -671,7 +678,7 @@
 
             <div class="footer__column footer__column-first">
                <a class="logo">
-                  <img src="images/header-logo.svg" alt="">
+                  <img src="images/logo.png" alt="">
                </a>
                <div class="footer__social">
                   <a href="#" class="footer__social-link"><span class="icon icon-youtube"></span></a>

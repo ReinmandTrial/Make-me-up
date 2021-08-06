@@ -28,7 +28,6 @@ $('.select__header').on('click',function(){
       e.stopPropagation();
    });
    //нажатие вне селекта
-
 //select end
 new Swiper ('.swiper-container', {
    // навигация, кнопки.swiper-container--second

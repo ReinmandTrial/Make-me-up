@@ -547,121 +547,116 @@
     <!-- HEADER end  -->
 
     <!-- MAIN start  -->
-    <main class="main profile-main profile">
+    <main class="main profile-orders profile">
       <!-- CONTENT start  -->
       <div class="content">
-        <div class="profile__body">
-          <div class="rightSide">
-            <div class="rightSide-bg"></div>
-            <div class="rightSide__main">
-              <h3 class="h3 title">Kathryn Murphy</h3>
-              <div class="balance">
-                <h5 class="balance__title h5"> יתרה נוכחית: </h5>
-                <div class="balance__body">
-                  <span class="icon icon-wallet"></span>
-                  <span class="balance__money">₪2344</span>
+        <div class="container">
+          <div class="profile__body">
+            <div class="rightSide">
+              <div class="rightSide-bg"></div>
+              <div class="rightSide__main">
+                <h3 class="h3 title">Kathryn Murphy</h3>
+                <div class="balance">
+                  <h5 class="balance__title h5"> יתרה נוכחית: </h5>
+                  <div class="balance__body">
+                    <span class="icon icon-wallet"></span>
+                    <span class="balance__money">₪2344</span>
+                  </div>
                 </div>
+                <ul class="nav">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">ראשי</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">פרטי חשבון</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link active">היסטוריית הזמנות</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">מועדון מאפרים</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">תכנית שותפים</a>
+                  </li>
+                </ul>
               </div>
-              <ul class="nav">
-                <li class="nav__item">
-                  <a href="#" class="nav__link active">ראשי</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">פרטי חשבון</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">היסטוריית הזמנות</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">מועדון מאפרים</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">תכנית שותפים</a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="leftSide">
-            <div class="leftSide__main">
-              <h3 class="title h3">פרטי חשבון</h3>
-              <div class="form__table">
-                <div class="form__list">
-                  <h4 class="h4">מידע אישי
-                  </h4>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">מידע אישי</div>
-                      <input type="text" class="form__input" placeholder="" value="Kathryn">
-                    </div>
+            <div class="leftSide">
+              <div class="leftSide__main">
+                <!-- <h3 class="title h3">היסטוריית הזמנות</h3> -->
+                <div class="profile__header">
+                  <div class="profile__header-title">
+                    <h3 class="h3">מס‘ הזמנה:</h3>
+                    <span class="profile__header-index h3">3213342 </span>
                   </div>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">שם משפחה</div>
-                      <input type="text" class="form__input" placeholder="" value="Murphy">
-                    </div>
-                  </div>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">טלפון</div>
-                      <input type="text" class="form__input" placeholder="" value="0737-284-824">
-                    </div>
-                  </div>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">כתובת דוא"ל</div>
-                      <input type="text" class="form__input" placeholder="" value="Kathryn@gmail.com">
-                    </div>
-                  </div>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">סיסמה</div>
-                      <input type="password" class="form__input" placeholder="" value="123455">
-                    </div>
-                    <div class="form__hint">שינוי סיסמה</div>
-                  </div>
+                  <a href="#" class="profile__link-back">
+                    <span class="h5">כל ההזמנות</span>
+                    <span class="icon icon-triangle-left"></span>
+                  </a>
                 </div>
-                <div class="form__list">
-                  <h4 class="h4">כתובת למשלוח
-                  </h4>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">עיר</div>
-                      <input type="text" class="form__input" placeholder="" value="ישראל">
-                    </div>
+                <div class="table">
+                  <div class="table__row table__row-header">
+                    <div class="table__column table__header table__column-product">שם מוצר</div>
+                    <div class="table__column table__header table__column-index">מק“ט</div>
+                    <div class="table__column table__header table__column-brand">שם מותג</div>
+                    <div class="table__column table__header table__column-price">מחיר ליחידה</div>
+                    <div class="table__column table__header table__column-counter">כמות</div>
+                    <div class="table__column table__header table__column-priceSale">סה“כ </div>
                   </div>
-                  <div class="form__item">
-                    <div class="form__bar">
-                      <div class="form__bar-title">רחוב</div>
-                      <input type="text" class="form__input" placeholder="" value="ישראל 21">
+                  <div class="table__row">
+                    <div class="table__column table__column-product">
+                      <div class="card__product--table">
+                        <div class="card__product-img--table">
+                          <img src="images/table-tovar.png" alt="">
+                        </div>
+                        <div class="card__product-title--table">
+                          פיקסר ספריי Fixing Spray לקיבוע האיפור
+                        </div>
+                      </div>
                     </div>
+                    <div class="table__column table__column-index">3213342</div>
+                    <div class="table__column table__column-brand">SOTHYS סוטיס</div>
+                    <div class="table__column table__column-price">₪79</div>
+                    <div class="table__column table__column-counter">1</div>
+                    <div class="table__column table__column-priceSale">₪79</div>
                   </div>
-                  <div class="form__item form__item--group">
-                    <div class="form__bar">
-                      <div class="form__bar-title">מספר בית</div>
-                      <input type="text" class="form__input" placeholder="" value="מספר בית">
+                  <div class="table__row">
+                    <div class="table__column table__column-product">
+                      <div class="card__product--table">
+                        <div class="card__product-img--table">
+                          <img src="images/table-tovar.png" alt="">
+                        </div>
+                        <div class="card__product-title--table">
+                          פיקסר ספריי Fixing Spray לקיבוע האיפור
+                        </div>
+                      </div>
                     </div>
-                    <div class="form__bar">
-                      <div class="form__bar-title">דירה</div>
-                      <input type="text" class="form__input" placeholder="" value="דירה">
-                    </div>
-                    <div class="form__bar">
-                      <div class="form__bar-title">מיקוד</div>
-                      <input type="text" class="form__input" placeholder="" value="מיקוד">
-                    </div>
+                    <div class="table__column table__column-index">3213342</div>
+                    <div class="table__column table__column-brand">SOTHYS סוטיס</div>
+                    <div class="table__column table__column-price">₪79</div>
+                    <div class="table__column table__column-counter">1</div>
+                    <div class="table__column table__column-priceSale">₪79</div>
                   </div>
-                  <div class="form__item">
-                    <label class="check__box">
-                      <input type="checkbox" class="check__box-input">
-                      <span class="check__box-style">
-                        <span class="icon icon-check"></span>
-                      </span>
-                      <span class="signup-law__description">להרשמה למועדון המאפרים שלנו )אני עוסק\ת
-                        בתחום האיפור באופן שוטף, ויש לי תעודת מאפר( !</span>
-                    </label>
+                  <div class="table__row">
+                    <div class="table__column table__column-product">
+                      <div class="card__product--table">
+                        <div class="card__product-img--table">
+                          <img src="images/table-tovar.png" alt="">
+                        </div>
+                        <div class="card__product-title--table">
+                          פיקסר ספריי Fixing Spray לקיבוע האיפור
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table__column table__column-index">3213342</div>
+                    <div class="table__column table__column-brand">SOTHYS סוטיס</div>
+                    <div class="table__column table__column-price">₪79</div>
+                    <div class="table__column table__column-counter">1</div>
+                    <div class="table__column table__column-priceSale">₪79</div>
                   </div>
                 </div>
               </div>
-              <button class="btn btn-primary">שמירה</button>
             </div>
           </div>
         </div>
