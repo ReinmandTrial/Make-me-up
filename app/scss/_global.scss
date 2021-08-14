@@ -282,3 +282,30 @@ textarea {
 	}
 }
 //check-box end
+
+.breadcrumbs {
+	display: none;
+	margin-top: 10px;
+	.container {
+		display: flex;
+		align-items: center;
+	}
+	&__link {
+		display: block;
+		font-size: 10px;
+		line-height: 15px;
+		&:not(:first-child) {
+			margin-right: 9px;
+			.icon-triangle-left {
+				display: none;
+			}
+		}
+		&:not(:last-child) {
+			color: $gray;
+		}
+	}
+	.icon-triangle-left {
+		font-size: 6px;
+		margin-right: 9px;
+	}
+}

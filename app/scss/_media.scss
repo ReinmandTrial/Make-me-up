@@ -27,6 +27,11 @@
             flex-wrap: wrap;
         }
     }
+    .footer {
+        .btn__move {
+            display: none;
+        }
+    }
 }
 
 // MAX-WIDTH 1600PX breakpoints END
@@ -100,6 +105,23 @@
     }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
+
+
+// MAX-WIDTH 1249.98PX breakpoints START
+@media (max-width: 1249.98px) {
+    .login-body {
+        &__signup-body {
+            display: block;
+            .login-body__signup-block:not(:first-child) {
+                margin-right: unset;
+            }
+        }
+        // &__signup-block {
+        //     width: unset;
+        // }
+    }
+}
+// MAX-WIDTH 1249.98PX breakpoints END
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
@@ -191,8 +213,14 @@
        &__link {
            display: none;
        }
+       &__head-content {
+           max-width: 320px;
+           font-size: 10px;
+           text-align: center;
+       }
        &__head {
-           display: none;
+           height: 39px;
+           line-height: 15px;
        }
        .icon-burger{
            display: block;
@@ -300,6 +328,20 @@
            margin-left: auto;
        }
    }
+   .login-body {
+        &__signup-block {
+            width: unset;
+        }
+        &__signup-body {
+            width: unset;
+        }
+   }
+   .signup {
+       .login-body__title {
+           margin-top: unset;
+           margin-bottom: unset;
+       }
+   }
 }
 // MAX-WIDTH 1024.99PX breakpoints END
 
@@ -307,6 +349,9 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+    .breadcrumbs {
+        display: block;
+    }
     .swiper-pagination {
         display: flex;
         justify-content: center;
@@ -481,6 +526,92 @@
             width: 75px;
         }
     }
+
+    .login-body {
+        &__content {
+            display: block;
+        }
+        &__signup {
+            margin: 0 -15px;
+        }
+        &__forms {
+            width: unset;
+        }
+    }
+    .login {
+        &-title {
+            margin-top: calc(12px + (40 - 12) * ((100vw - 320px) / (991 - 320)));
+        }
+        &-title__content {
+           font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (991 - 320)));
+        }
+        &-body {
+            // margin-top: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320)));
+            margin: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320))) 0px calc(32px + (134 - 32) * ((100vw - 320px) / (991 - 320))) 0px;
+            .btn-contour {
+                margin-bottom: calc(15px + (22 - 15) * ((100vw - 320px) / (991 - 320)));
+            }
+        }
+        &-body__title {
+            font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (991 - 320)));
+        }
+        &-body__password {
+            margin: calc(4px + (14 - 4) * ((100vw - 320px) / (991 - 320))) 0px calc(27px + (42 - 27) * ((100vw - 320px) / (991 - 320))) 0px;
+            margin-right: auto;
+        }
+        &-body__signup-content {
+            border: unset;
+            padding: 25px;
+        }
+        &-body__signup {
+            padding: unset;
+        }
+        &-body__signup .blog__more-btn {
+            padding: 10px 44.5px;
+            font-size: 12px;
+        }
+        &-body__signup-title {
+            margin-bottom: unset;
+        }
+        &-body__signup-subtitle {
+            margin-bottom: 22px;
+        }
+        &-birthday {
+            margin-bottom: calc(47px + (154 - 47) * ((100vw - 320px) / (991 - 320)));
+        }
+        &-birthday__link {
+            display: unset;
+        }
+        &-birthday__content {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    }
+    .log-bar {
+        padding: calc(3px + (41 - 3) * ((100vw - 320px) / (991 - 320))) 0px 0px 0px;
+        &__input {
+            padding-bottom: calc(7px + (16 - 7) * ((100vw - 320px) / (991 - 320)));
+        }
+        &__flesh-title {
+            margin-top: calc(37px + (79 - 37) * ((100vw - 320px) / (991 - 320)));
+        }
+    }
+    .signup-law {
+        margin: 27px 0px 22px 0px;
+        &__paragraph:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    .signup {
+        .login-body__remember {
+            display: none;
+        }
+        .btn-contour {
+            margin-bottom: 37px;
+        }
+    }
 }
 // MAX-WIDTH 991.98PX breakpoints END
 
@@ -603,7 +734,18 @@
     .blog__mobile-bg-bottom {
         z-index: 0;
     }
-    
+    .login {
+        &-birthday__link {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &-body__signup-title {
+            font-size: 20px;
+        }
+        &-body__signup-subtitle {
+
+        }
+    }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
@@ -624,6 +766,9 @@
         }
         .icon-cart .counter {
             display: none;
+        }
+        &__head-content {
+            max-width: 290px;
         }
     }
     .offers{
@@ -794,6 +939,21 @@
                 font-size: 8px;
             }
         }
+    }
+
+    .login {
+        &-body__forms {
+            width: unset;
+        }
+        &-body__frame {
+            display: block;
+        }
+    }
+    .signup-law {
+        & .check__box{
+            padding-right: 40px;
+        }
+
     }
 }
 // MAX-WIDTH 576.98PX breakpoints END 

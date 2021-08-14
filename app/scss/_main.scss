@@ -1623,7 +1623,7 @@
       }
    }
    &__forms-second {
-      margin-top: 96px;
+      // margin-top: 96px;
    }
    &__password {
       font-size: 12px;
@@ -1671,6 +1671,21 @@
          &:not(:first-child) {
             margin-right: 59px;
          }
+      }
+   }
+   &__signup-block {
+      width: 335px;
+   }
+   &__signup-body {
+      display: flex;
+      width: max-content;
+      .login-body__signup-block {
+         &:not(:first-child) {
+            margin-right: 59px;
+         }
+      }
+      .login-body__forms {
+         width: max-content;
       }
    }
 
@@ -1723,7 +1738,7 @@
       font-size: 14px;
       line-height: 21px;
       color:$color4;
-      margin-top: 75px;
+      margin-top: 79px;
    }
    &__input {
       display: flex;
