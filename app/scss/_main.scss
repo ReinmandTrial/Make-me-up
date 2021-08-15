@@ -277,7 +277,6 @@
    // justify-content: space-around;
    position: relative;
    height: 607px;
-   background-size: 100%;
    .container {
       height: 100%;
    }
@@ -535,7 +534,7 @@
    &__prev {
       text-transform: uppercase;
       background: $black2;
-      padding: 2px 9px;
+      padding: 4px 9px 2px 9px;
       color: $white;
       font-weight: 500;
       // margin-left: 0px;
@@ -793,7 +792,6 @@
    background-repeat: no-repeat;
    padding: 97px 0 ;
    position: relative;
-   background-size: 100%;
    .h2{
       text-align: center;
       margin-bottom: 41px;

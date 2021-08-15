@@ -5,6 +5,12 @@
         }
     }
 }
+@media (min-width: 1920px) {
+    .banner,
+    .blog {
+        background-size: 100%;
+    }
+}
 
 // MAX-WIDTH 1600PX breakpoints START
 @media (max-width: 1600px) {
@@ -590,12 +596,16 @@
 
     }
     .log-bar {
-        padding: calc(3px + (41 - 3) * ((100vw - 320px) / (991 - 320))) 0px 0px 0px;
+        padding: calc(22px + (41 - 22) * ((100vw - 320px) / (991 - 320))) 0px 0px 0px;
         &__input {
             padding-bottom: calc(7px + (16 - 7) * ((100vw - 320px) / (991 - 320)));
         }
         &__flesh-title {
             margin-top: calc(37px + (79 - 37) * ((100vw - 320px) / (991 - 320)));
+            margin-bottom: -27px;
+        }
+        &__body {
+            margin-top: 27px;
         }
     }
     .signup-law {
@@ -610,6 +620,17 @@
         }
         .btn-contour {
             margin-bottom: 37px;
+        }
+    }
+    .mobile-d-none {
+        display: none;
+    }
+    .favorites {
+        &__card {
+            padding: 9px 9px 10px 10px;
+        }
+        &__body {
+            padding: 26px 15px;
         }
     }
 }
@@ -769,6 +790,18 @@
         }
         &__head-content {
             max-width: 290px;
+        }
+        .cart__body {
+            padding: 38px 15px 39px 15px;
+            .btn-contour {
+                padding: 13.5px 51px;
+            }
+        }
+        .cart__popup .blog__more-btn {
+            padding: 13.5px 23px;
+        }
+        .cart__btn .btn:not(:first-child) {
+            margin-right: 8px;
         }
     }
     .offers{
@@ -954,6 +987,13 @@
             padding-right: 40px;
         }
 
+    }
+
+    .favorites {
+        &__item,
+        &__body {
+            width: unset;
+        }
     }
 }
 // MAX-WIDTH 576.98PX breakpoints END 
