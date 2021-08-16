@@ -64,7 +64,11 @@ new Swiper ('.blog__slider', {
    navigation: {
       prevEl: '.blog__swiper-btn-next',
       nextEl: '.blog__swiper-btn-prev',
-   },  
+   },    
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+   },
    mousewheel: { 
       sensitivity: 1,
    },
@@ -73,7 +77,15 @@ new Swiper ('.blog__slider', {
    watchOverflow: true, 
    spaceBetween: 20, 
    loop: true,
-   mousewheelControl: false
+   mousewheelControl: false,     
+   breakpoints:{
+      768:{
+         slidesPerView: 3
+      },
+      320: {
+            slidesPerView: 1
+      }
+   } 
 })
 new Swiper ('.swiper-container--second', {
    // навигация, кнопки
@@ -105,6 +117,10 @@ new Swiper ('.swiper-container--second', {
 new Swiper ('.photogallery__swiper-container', {
    mousewheel: { 
       sensitivity: 1,
+   },    
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
    },
    autoHeight: true, 
    slidesPerView: 'auto', 
