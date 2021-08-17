@@ -681,17 +681,24 @@
 .recommendation {
    padding-bottom: 74px;
    position: relative;
+   // &__gods {
+   //    display: grid;
+   //    grid-template-columns: 1fr 1fr 1fr 1fr;
+   //    justify-content: center;
+   //    // margin-bottom: -20px;
+   //    margin: -10px;
+   //    .advice__card {
+   //       // &:not(:last-child) {
+   //       //    margin-left: 20px;
+   //       // }
+   //    }
+   // }
    &__gods {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      justify-content: center;
-      // margin-bottom: -20px;
-      margin: -10px;
-      .advice__card {
-         // &:not(:last-child) {
-         //    margin-left: 20px;
-         // }
-      }
+      overflow: hidden;
+   }
+   .blog__swiper-btn-next,
+   .blog__swiper-btn-prev {
+      border: 1px solid $border;
    }
    .advice__card {
       // margin-bottom: 20px;
@@ -728,7 +735,7 @@
       background-image: url('../images/discount-banner.png');
       background-repeat: no-repeat;
       width: 704px;
-      height: 733px;
+      // height: 733px;
       padding: 82px 68px 0 0 ;
       display: block;
       background-size: cover;

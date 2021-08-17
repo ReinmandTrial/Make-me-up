@@ -21,7 +21,13 @@
         }
     }
 }
-
+@media only screen and (max-width: 836px) and (min-width: 576px) { 
+    .footer {
+        &__column-fifth {
+            margin-top: 20px;
+        }
+    }
+}
 
 // MAX-WIDTH 1600PX breakpoints START
 @media (max-width: 1600px) {
@@ -40,10 +46,10 @@
         }
     }
     .recommendation {
-        &__gods {
-            display: flex;
-            flex-wrap: wrap;
-        }
+        // &__gods {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        // }
     }
     .footer {
         .btn__move {
@@ -68,7 +74,7 @@
         .blog__swiper-btn-prev,
         .blog__swiper-btn-next {
             top: unset;
-            bottom: 5%;
+            bottom: 11%;
         }
     }
 }
@@ -136,11 +142,11 @@
             }
         }
     }
-    .recommendation {
-        &__goods {
-            flex-wrap: wrap;
-        }
-    }
+    // .recommendation {
+    //     &__goods {
+    //         flex-wrap: wrap;
+    //     }
+    // }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 
@@ -205,11 +211,11 @@
     &__little {
         margin: 10px 0px;
     }
-    .recommendation {
-        &__goods {
-            flex-wrap: wrap;
-        }
-    }
+    // .recommendation {
+    //     &__goods {
+    //         flex-wrap: wrap;
+    //     }
+    // }
       
   }
   .footer {
@@ -515,10 +521,10 @@
     }
     .recommendation {
         &__gods {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap:  8px;
-            grid-row-gap: 16px;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-column-gap:  8px;
+            // grid-row-gap: 16px;
             .advice__card:not(:last-child) {
                 margin: 0 auto;
             }
@@ -888,7 +894,7 @@
             width: 100%;
         }
         .advice__item{
-            height: calc(157px + (311 - 157) * ((100vw - 320px) / (575 - 320)));
+            // height: calc(157px + (311 - 157) * ((100vw - 320px) / (575 - 320)));
         }
         .advice__img {
             // width: calc(100% - (calc(70px + (120 - 70) * ((100vw - 320px) / (767 - 320)))));
