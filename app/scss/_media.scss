@@ -28,6 +28,7 @@
     .discount {
         &__banner {
             // width: calc(778px + (704 - 778) * ((100vw - 1401px) / (1600 - 1401)));
+            height: unset;
         }
         &__content {
             margin-right: auto;
@@ -450,13 +451,13 @@
         }
         &__item {
             // height: calc(205px + (356 - 205) * ((100vw - 576px) / (991 - 576)));
-            padding: calc(35px + (50 - 35) * ((100vw - 320px) / (991 - 320))) calc(23px + (24 - 23) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320))) calc(29px + (24 - 29) * ((100vw - 320px) / (991 - 320)));
         }
         &__img{
             // width: calc(100% - 120px);
             // height: calc(100% - 120px);
-            width: calc(75px + (200 - 75) * ((100vw - 320px) / (991 - 320)));
-            height: calc(75px + (200 - 75) * ((100vw - 320px) / (991 - 320)));
+            width: calc(79px + (200 - 79) * ((100vw - 320px) / (991 - 320)));
+            height: calc(77px + (200 - 77) * ((100vw - 320px) / (991 - 320)));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -496,7 +497,7 @@
             grid-row-gap: 16px;
         }
         &__content .advice__item {
-            padding: calc(41px + (10 - 41) * ((100vw - 320px) / (991 - 320))) calc(32px + (10 - 32) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(39px + (10 - 39) * ((100vw - 320px) / (991 - 320))) calc(29px + (10 - 29) * ((100vw - 320px) / (991 - 320)));
         }
         &__inside {
             display: block;
@@ -948,9 +949,6 @@
     .advice{
         .swiper-container{
             // width: 545px;
-        }
-        &__container-wrapper {
-            padding-left: unset;
         }
     }
     .footer {

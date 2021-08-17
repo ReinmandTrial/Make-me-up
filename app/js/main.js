@@ -50,8 +50,8 @@ new Swiper ('.swiper-container', {
            slidesPerView: 'auto',
         },
          320: {
-            slidesPerView: 2.5,
-            spaceBetween: 7,
+            slidesPerView: 2,
+            spaceBetween: 8,
         }
       },
      autoHeight: true, 
