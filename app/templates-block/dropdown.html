@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шаблоны</title>
+   <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<style>
+   .block{
+      width: 50%;
+      margin: 0 auto;
+      border: 1px solid black;
+   }
+   .body{
+      display: none;
+   }
+   .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+   }
+</style>
+
+<body>
+   
+   <div>
+      <div class="toggle-block block">
+         <div class="header toggle-btn">
+            <h3 class="title toggle-title">список</h3>
+            <span class="icon icon-triangle-down"></span>
+         </div>
+         <div class="toggle-body body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nemo, vitae repellat dicta iure officiis debitis laborum qui, repellendus aut veniam aliquid fugiat sed eos tempora maxime, dolore corporis unde?
+         </div>
+      </div>
+
+   </div>
+
+<script src="../js/main.min.js"></script>
+</body>
+
+</html>

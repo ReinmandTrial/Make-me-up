@@ -244,20 +244,18 @@ textarea {
 }
 //page pagination end
 //check-box 
-.check__box{
+.checkbox{
 	display: block;
 	position: relative;
 	padding-right: 25px;
 	cursor: pointer;
-	height: 100%;
 	&-input{
 		position: absolute;
 		width: 1px;
 		height: 1px;
 		overflow: hidden;
 		clip: rect(0 0 0 0);
-		// padding-right: 25px;
-		&:checked + .check__box-style{
+		&:checked + .checkbox-style{
 			.icon{
 				display: block;
 			}
@@ -265,24 +263,78 @@ textarea {
 	}
 	&-style{
 		position: absolute;
-		// width: 20px;
-		// height: 20px;
 		border: 1px solid $color4;
 		margin-right: -25px;
       top: 50%;
       transform: translate(0, -50%);
       width: 18px;
       height: 18px;
-      // margin-right: -40px;
 		.icon{
 			display: none;
 			font-size: 11px;
 			margin-top: 3px;
 		}
 	}
+	&.default{
+		height: 100%;
+	}
 }
 //check-box end
-
+// radiobox start
+.radio{
+	display: block;
+	position: relative;
+	padding-right: 25px;
+	cursor: pointer;
+	&-input{
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+	}
+	&-style{
+		position: absolute;
+		border: 1px solid transparent;
+		margin-right: -25px;
+      top: 50%;
+      transform: translate(0, -50%);
+	}
+	&.default{
+		.radio-style{
+			border-color: $color4;
+			border-radius: 50%;
+			width: 18px;
+			height: 18px;
+		}
+		.radio-input:checked + .radio-style::after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 6px;
+			height: 6px;
+			background: $color2;
+			border-radius: 50%;
+		}
+	}
+}
+//radiobox end
+//dropdown start
+.toggle-block{
+	.icon{
+		&.open{
+			transform: rotate(180deg);
+		}
+	}
+	&.open{
+		.toggle-body{
+			display: block;
+		}
+	}
+}
+//dropdown end
 .breadcrumbs {
 	display: none;
 	margin-top: 10px;
