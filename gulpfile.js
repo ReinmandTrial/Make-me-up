@@ -62,9 +62,20 @@ function styles() {
       .pipe(dest('app/css'))
       .pipe(browserSync.stream())
 }
-
+function styles_link() {
+  return src('app/scss/libs.scss')
+      .pipe(scss({outputStyle: 'compressed'}))
+      .pipe(concat('libs.min.css'))
+      .pipe(autoprefixer({
+        overrideBrowserslist: ['last 10 version'],
+        grid: true
+      }))
+      .pipe(dest('app/css'))
+      .pipe(browserSync.stream())
+}
 function build() {
   return src([
+    'app/css/libs.min.css',
     'app/css/style.min.css',
     'app/fonts/**/*',
     'app/js/main.min.js',
@@ -79,6 +90,7 @@ function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
+exports.styles_link = styles_link;
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
@@ -87,6 +99,6 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles_link, styles, scripts, browsersync, watching);
 
 
