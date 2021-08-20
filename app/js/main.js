@@ -60,6 +60,39 @@ new Swiper ('.swiper-container', {
      loop: true
 
 });
+
+new Swiper ('.recommendation-container', {
+   navigation: {
+      prevEl: '.blog__swiper-btn-next',
+      nextEl: '.blog__swiper-btn-prev',
+   },   
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+   },
+   mousewheel: { 
+      sensitivity: 1,
+   },
+   breakpoints: {
+      769: {
+         spaceBetween: 20,
+     },
+     576: {
+        slidesPerView: 'auto',
+     },
+      320: {
+         slidesPerView: 2,
+         spaceBetween: 8,
+     }
+   },
+   slidesPerView: 4, 
+   watchOverflow: true, 
+   spaceBetween: 20, 
+   loop: true,
+   mousewheelControl: false,   
+})
+
+
 new Swiper ('.blog__slider', {
    navigation: {
       prevEl: '.blog__swiper-btn-next',
@@ -115,6 +148,10 @@ new Swiper ('.swiper-container--second', {
       } 
 });
 new Swiper ('.photogallery__swiper-container', {
+   navigation: {
+      nextEl: '.blog__swiper-btn-next',
+      prevEl: '.blog__swiper-btn-prev',
+   },
    mousewheel: { 
       sensitivity: 1,
    },    
