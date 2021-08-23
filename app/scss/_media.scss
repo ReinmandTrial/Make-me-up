@@ -7,7 +7,6 @@
 }
 
 @media (min-width: 1920.98px) {
-
     .banner,
     .blog {
         background-size: 100%;
@@ -67,7 +66,6 @@
     }
 
     .blog {
-
         &__swiper-btn-prev,
         &__swiper-btn-next {
             top: unset;
@@ -114,7 +112,6 @@
         &__title {
             margin-top: unset;
         }
-
     }
 
     .discount {
@@ -150,8 +147,8 @@
             margin-bottom: auto;
             flex: 1 0 auto;
             margin-left: auto;
-            padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320))) calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))) 0px 0px;
-            ;
+            padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)))
+                calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))) 0px 0px;
         }
 
         &__big,
@@ -182,7 +179,6 @@
 
 // MAX-WIDTH 1399.98PX breakpoints END
 
-
 // MAX-WIDTH 1249.98PX breakpoints START
 @media (max-width: 1249.98px) {
     .login-body {
@@ -204,6 +200,11 @@
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
+    .page-404 {
+        &__block-img {
+            margin-left: 50px;
+        }
+    }
     .header {
         .icon-heart {
             margin-left: 20px;
@@ -222,8 +223,6 @@
             //   left: calc((180 + 0) * ((100vw - 991px) / (1920 - 991)) - 0px );
             left: 0;
         }
-
-
     }
 
     .advice {
@@ -259,7 +258,6 @@
         //         flex-wrap: wrap;
         //     }
         // }
-
     }
 
     .footer {
@@ -368,10 +366,10 @@
             top: 0;
             z-index: 99999;
             display: block;
-            background: #FFFDFC;
+            background: #fffdfc;
             height: 100vh;
             overflow: auto;
-            transition: .5s;
+            transition: 0.5s;
 
             &.open {
                 left: 0;
@@ -510,10 +508,79 @@
 
 // MAX-WIDTH 1024.99PX breakpoints END
 
-
-
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+    .page-404 {
+        &__body {
+            padding: 100px 0;
+        }
+        &__block-text {
+            padding: 0;
+        }
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .card-brands {
+        flex-direction: column;
+        height: unset;
+        &__image-box {
+            width: unset;
+            justify-content: flex-start;
+            // align-items: center;
+            height: 110px;
+            padding: 30px 20px 17px;
+        }
+        &__img {
+            display: flex;
+            align-items: center;
+            & img {
+                max-height: 100%;
+            }
+        }
+        &__container {
+            padding: 0 20px 29px 29px;
+        }
+        &__title {
+            margin-bottom: 12px;
+        }
+    }
+    .accordion {
+        &__icon {
+            margin-right: unset;
+        }
+    }
+
+    .message-form {
+        width: 44%;
+    }
+
+    .contact-us-banner {
+        width: 52%;
+        &__descr {
+            margin-bottom: 50px;
+        }
+        &__link {
+            width: 42.32px;
+            height: 42.32px;
+        }
+        &__schedule {
+            margin-bottom: 40px;
+        }
+        &__bg {
+            top: -50px;
+        }
+    }
+    .contact-us {
+        .title {
+            margin-bottom: 26px;
+        }
+        &__wrapper-page-contact {
+            padding-top: 31px;
+        }
+    }
+
     .breadcrumbs {
         display: block;
     }
@@ -595,7 +662,8 @@
 
         &__item {
             // height: calc(205px + (356 - 205) * ((100vw - 576px) / (991 - 576)));
-            padding: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320))) calc(29px + (24 - 29) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320)))
+                calc(29px + (24 - 29) * ((100vw - 320px) / (991 - 320)));
         }
 
         &__img {
@@ -651,7 +719,8 @@
         }
 
         &__content .advice__item {
-            padding: calc(39px + (10 - 39) * ((100vw - 320px) / (991 - 320))) calc(29px + (10 - 29) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(39px + (10 - 39) * ((100vw - 320px) / (991 - 320)))
+                calc(29px + (10 - 29) * ((100vw - 320px) / (991 - 320)));
         }
 
         &__inside {
@@ -673,7 +742,6 @@
 
     .recommendation {
         &__gods {
-
             // display: grid;
             // grid-template-columns: 1fr 1fr;
             // grid-column-gap:  8px;
@@ -696,7 +764,6 @@
         }
     }
 
-
     .section-title {
         margin-bottom: 24px;
     }
@@ -709,7 +776,6 @@
             display: flex;
         }
     }
-
 
     .footer {
         padding: 20px 0px 36px;
@@ -762,7 +828,8 @@
             text-overflow: ellipsis;
         }
 
-        &-subtitle {}
+        &-subtitle {
+        }
 
         &-btn {
             width: 75px;
@@ -794,7 +861,8 @@
 
         &-body {
             // margin-top: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320)));
-            margin: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320))) 0px calc(32px + (134 - 32) * ((100vw - 320px) / (991 - 320))) 0px;
+            margin: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320))) 0px
+                calc(32px + (134 - 32) * ((100vw - 320px) / (991 - 320))) 0px;
 
             .btn-contour {
                 margin-bottom: calc(15px + (22 - 15) * ((100vw - 320px) / (991 - 320)));
@@ -806,7 +874,8 @@
         }
 
         &-body__password {
-            margin: calc(4px + (14 - 4) * ((100vw - 320px) / (991 - 320))) 0px calc(27px + (42 - 27) * ((100vw - 320px) / (991 - 320))) 0px;
+            margin: calc(4px + (14 - 4) * ((100vw - 320px) / (991 - 320))) 0px
+                calc(27px + (42 - 27) * ((100vw - 320px) / (991 - 320))) 0px;
             margin-right: auto;
         }
 
@@ -845,7 +914,6 @@
             margin: 0 auto;
             text-align: center;
         }
-
     }
 
     .log-bar {
@@ -918,6 +986,37 @@
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
+    .card-brands {
+        &__title {
+            font-size: 16px;
+        }
+    }
+    .brands {
+        padding-bottom: 64px;
+        .title {
+            margin-bottom: 21px;
+        }
+    }
+
+    .contact-us-banner {
+        width: 100%;
+        &__bg {
+            top: -113px;
+        }
+    }
+    .message-form {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+    .contact-us {
+        padding-bottom: 48px;
+        &__wrapper-page-contact {
+            display: block;
+        }
+    }
+    .log-bar__title {
+        margin-bottom: 2px;
+    }
     .header {
         .icon-cart {
             margin-right: 0px;
@@ -952,7 +1051,6 @@
     }
 
     .articles {
-
         // padding: 45px 0px;
         .advice {
             &__content {
@@ -975,7 +1073,6 @@
 
         &__description {
             flex: 0 0 auto;
-
         }
 
         &__description-description {
@@ -1026,9 +1123,6 @@
         }
     }
 
-    .h2 {
-        font-size: 24px;
-    }
 
     .recommendation-bg,
     .recommendation-bg-second,
@@ -1040,7 +1134,15 @@
     .advice__nav-bg,
     .catalog__top-right-bg,
     .catalog__top-left-bg,
-    .catalog__middle-left-bg  {
+    .catalog__middle-left-bg,
+    .contact-us-bg1,
+    .contact-us-bg2,
+    .contact-us-bg3,
+    .brands__bg1,
+    .brands__bg2,
+    .page-404__bg1,
+    .page-404__bg2,
+    .page-404__bg3 {
         display: none;
     }
 
@@ -1052,7 +1154,8 @@
     .recommendation__mobile-bg-bottom,
     .blog__mobile-bg-top,
     .blog__mobile-bg-bottom,
-    .photogallery__mobile-bg {
+    .photogallery__mobile-bg,
+    .page-404-mobile__bg1 {
         display: block;
     }
 
@@ -1071,7 +1174,8 @@
             font-size: 20px;
         }
 
-        &-body__signup-subtitle {}
+        &-body__signup-subtitle {
+        }
     }
     .search {
         &__noresult-swiper-button {
@@ -1085,8 +1189,169 @@
 
 // MAX-WIDTH 767.98PX breakpoints END
 
-// MAX-WIDTH 576.98PX breakpoints START 
+// MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+    .h1{
+        font-size: 64px;
+     }
+     .h2{
+        font-size: 24px;
+     }
+     .h3{
+        font-size: 20px;
+     }
+     .h4{
+        font-size: 14px;
+     }
+     .h5{
+        font-size: 12px;
+     }
+    .page-404 {
+        &__body {
+            padding: 36px 0 82px;
+        }
+        &__img-404 {
+            width: 198px;
+            height: 93px;
+            margin-right: 14px;
+        }
+        &__block-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: unset;
+        }
+        &__img-lipstick {
+            width: 115px;
+            height: 91px;
+            transform: translate(0, -13px);
+            margin-left: 137px;
+        }
+        &__title {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        &__descr {
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+        &__btn {
+            min-width: 177px;
+            min-height: 48px;
+            font-size: 14px;
+        }
+    }
+    .card-brands {
+        width: 100%;
+    }
+
+    .accordion {
+        padding: 20px 0;
+        &__head {
+            padding: 20px 0;
+            margin: -20px 0;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__body {
+            margin-top: 6px;
+            padding-right: 27px;
+            font-size: 12px;
+        }
+        &__icon {
+            transform: translate(0, 3px);
+            margin-left: 13px;
+        }
+    }
+
+    .contact-us {
+        .breadcrumbs {
+            &__link {
+                font-size: 10px;
+            }
+            .icon-triangle-left {
+                font-size: 5.8px;
+            }
+        }
+        &__wrapper-page-faq {
+            padding-top: 11px;
+        }
+        .title {
+            padding: 0 16px;
+            text-align: right;
+            margin-top: 24px;
+            line-height: 134.88%;
+        }
+    }
+    .tabs {
+        justify-content: flex-start;
+        &__item {
+            padding: 0 0 10px;
+            &:not(:last-child) {
+                margin-left: 25px;
+            }
+        }
+    }
+    .message-form {
+        &__title {
+            font-size: 16px;
+            line-height: 134.88%;
+            margin-bottom: 26px;
+        }
+        .log-bar {
+            font-size: 12px;
+        }
+        &_container {
+            margin-bottom: 34px;
+        }
+        &__btn {
+            padding: 12px 35px;
+            width: 100%;
+        }
+    }
+    .contact-us-banner {
+        padding: 31px 0 40px;
+        &__title {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+        &__phone-num {
+            font-size: 28.4444px;
+            line-height: 42px;
+            margin-bottom: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 31px;
+        }
+
+        &__schedule {
+            margin-bottom: 22px;
+        }
+
+        &__schedule-title {
+        }
+
+        &__schedule-time {
+            font-size: 14px;
+            line-height: 21px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &__link {
+            & span {
+                font-size: 9.3px;
+            }
+            :not(:last-child) {
+                margin-left: 8px;
+            }
+        }
+    }
+
     .header {
         &__body {
             height: 56px;
@@ -1148,7 +1413,6 @@
                 max-width: unset;
             }
         }
-
     }
 
     .recommendation {
@@ -1211,9 +1475,6 @@
         }
     }
 
-    .h5 {
-        font-size: 12px;
-    }
 
     .photogallery {
         &__img {
@@ -1302,9 +1563,6 @@
         }
     }
 
-    .h4 {
-        font-size: 14px;
-    }
 
     .blog {
         padding-bottom: 36px;
@@ -1346,11 +1604,9 @@
         & .check__box {
             padding-right: 40px;
         }
-
     }
 
     .favorites {
-
         &__item,
         &__body {
             width: unset;
@@ -1370,4 +1626,4 @@
     }
 }
 
-// MAX-WIDTH 576.98PX breakpoints END 
+// MAX-WIDTH 576.98PX breakpoints END
