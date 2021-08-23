@@ -17,6 +17,14 @@
       height: 105px;
       align-items: center;
       position: relative;
+      &.search-open{
+         .icon-user{
+            opacity: 0;
+         }
+         .header__phone{
+            opacity: 0;
+         }
+      }
    }
    &__body::after {
       content: "";

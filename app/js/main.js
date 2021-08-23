@@ -288,21 +288,11 @@ $('.btn-popup').on('click', function () {
 	$(popups).each(function () {
 		$(this).fadeOut();
 	})
-	if (btn.hasClass('btn-search')) {
-		$('.popup-search').fadeIn();
-	}
 })
 //popup open end
 //popup close
 $('.popup-close').on('click', function () {
 	$(this).closest('.popup').fadeOut();
-	if ($(this).closest('.popup').hasClass('popup-search')) {
-		$(this).closest('.popup').find('.popup-search__input').val('');
-		//test
-		$(this).closest('.popup').find('.popup-search__block').removeClass('open');
-		$(this).closest('.popup').find('.popup-search__block').find('.popup-search__body').fadeOut();
-		//test end
-	}
 })
 
 $(document).on('click', function (e) {
@@ -312,12 +302,19 @@ $(document).on('click', function (e) {
 	e.stopPropagation();
 });
 //popup close end
-//popup search test
-$($('.popup-search').find('.icon-search')).on('click', function () {
-	$(this).closest('.popup-search__block').addClass('open');
-	$(this).closest('.popup-search__block').find('.popup-search__body').fadeIn();
+
+//search test
+$('.btn-search').on('click',function(){
+	$(this).closest('.header__body').toggleClass('search-open');
+
 })
-//popup search text end
+$(document).on('click', function (e) {
+	if (!$(e.target).closest(".btn-search").length ){
+		$('.header__body').removeClass('search-open');
+	}
+	e.stopPropagation();
+});
+//search text end
 //popup end
 
 //page pagination
