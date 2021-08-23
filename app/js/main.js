@@ -204,7 +204,80 @@ new Swiper ('.search__noresult-swiper-container', {
      },
      autoHeight: true, 
      spaceBetween: 20, 
-     slidesPerView: 4,  
+     slidesPerView: 5,   
+
+     breakpoints:{ 
+      991: {
+         slidesPerView: 4,
+      },
+      576: {
+         slidesPerView: 3,
+      },
+      320: {
+         slidesPerView: 2,
+         spaceBetween: 10
+      },
+   }
+});
+new Swiper ('.prodact-slider__container', {
+   // навигация, кнопки
+     navigation: {
+       nextEl: '.prodact-slider__button-next',
+       prevEl: '.prodact-slider__button-prev',
+     },  
+     mousewheel: { 
+       sensitivity: 1,
+     },    
+     pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+     },
+     autoHeight: true, 
+     spaceBetween: 20, 
+     slidesPerView: 5,   
+
+     breakpoints:{ 
+      991: {
+         slidesPerView: 5,
+      },
+      576: {
+         slidesPerView: 3,
+      },
+      320: {
+         slidesPerView: 2,
+         spaceBetween: 10
+      },
+   }
+});
+new Swiper ('.prodact-slider__container-second', {
+   // навигация, кнопки
+     navigation: {
+       nextEl: '.prodact-slider-second__button-next',
+       prevEl: '.prodact-slider-second__button-prev',
+     },  
+     mousewheel: { 
+       sensitivity: 1,
+     },    
+     pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+     },
+     autoHeight: true, 
+     spaceBetween: 20, 
+     slidesPerView: 5,   
+
+     breakpoints:{ 
+      991: {
+         slidesPerView: 4,
+      },
+      576: {
+         slidesPerView: 3,
+      },
+      320: {
+         slidesPerView: 2,
+         spaceBetween: 10
+      },
+   }
 });
 
 //popup
@@ -376,3 +449,25 @@ for (let anchor of anchors) {
 }
 
 //drop
+
+
+// amount  prodact-page
+$('.prodact-card__plus').on('click',function(){
+   var btn = $(this);
+   var Block = btn.closest('.prodact-card__amount');
+   var kol = Block.find('.prodact-card__input').val();
+   if(kol<= 100){
+      kol++;
+   }
+   Block.find('.prodact-card__input').val(kol);
+})
+$('.prodact-card__minus').on('click',function(){
+   var btn = $(this);
+   var Block = btn.closest('.prodact-card__amount');
+   var kol = Block.find('.prodact-card__input').val();
+   if(kol > 0){
+      kol--;
+   }
+   Block.find('.prodact-card__input').val(kol);
+})
+//amount prodact-page end 

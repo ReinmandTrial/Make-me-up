@@ -661,7 +661,11 @@
 .articles-bg-right,
 .photogallery-bg-right,
 .photogallery-bg-center,
-.photogallery-bg-left {
+.photogallery-bg-left,
+.catalog__top-right-bg,
+.catalog__top-left-bg,
+.catalog__middle-left-bg {
+   position: absolute;
    z-index: -1;
 }
 .offers__mobile-bg,
@@ -1196,6 +1200,7 @@
 }
 
 .catalog{
+   position: relative;
    &__header{
       margin-bottom: 27px;
       display: flex;
@@ -1253,6 +1258,11 @@
          grid-area: 5 / 1 / 5 / 3;
       }
    }
+   &__item.catalog__item--video img,
+   &__item.catalog__item--img img {
+      height: 100%;
+      cursor: pointer;
+   }
    .content__block{
       width: 1072px;
    }
@@ -1261,7 +1271,7 @@
    }
    .advice__item{
       // height: 293px;
-      padding: 63px 41px;
+      padding: calc(10px + (63 - 10) * ((100vw - 992px) / (1920 - 992))) calc(10px + (41 - 10) * ((100vw - 992px) / (1920 - 992)));
    }
    .advice__img {
       width: 169px;
@@ -1303,6 +1313,51 @@
    &__swiper-button-prev{
       left: 331px;
    }
+   &__banner {
+      background: url(../images/catalog-banner.png) no-repeat;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0px 8px 0px;
+      align-items: center;
+      margin-bottom: 44px;
+   }
+   &__banner-discount {
+      color:  $color2;
+      font-size: 65px;
+      line-height: 96px;
+      font-weight: 100;
+      margin-right: 24px;
+   }
+   &__banner-name {
+      // text-align: left;
+   }
+   &__banner-title,
+   &__banner-description {
+      text-align: left;
+      color: $color4;
+      font-weight: 300;
+   }
+   &__banner-title {
+      font-size: 30px;
+      line-height: 41px;
+   }
+   &__banner-description {
+      font-size: 12px;
+      line-height: 17px;
+   }
+   &__top-right-bg {
+      top: 0;
+      right: 0;
+   }
+   &__top-left-bg {
+      top: 0;
+      left: 0;
+   }
+   &__middle-left-bg {
+      right: 0;
+      top: 35%;
+      bottom: 65%;
+   }
 }
 .filter{
    font-weight: 300;
@@ -1328,6 +1383,12 @@
    &__head{
       display: flex;
       align-items: center;
+      .toggle-btn {
+         cursor: pointer;
+         width: 100%;
+         display: flex;
+         align-items: center;
+      }
       .icon{
          margin-right: auto;
          color: $gray;
@@ -1342,6 +1403,7 @@
    }
    &__head-title{
       cursor: pointer;
+      font-size: 18px;
       &.h3{
          margin-bottom: 18px;
       }
@@ -1353,7 +1415,7 @@
       margin-top: 10px;
    }
    &__item{
-      margin-bottom: 5px;
+      margin-bottom: 14px;
    }
    .check__box{
       padding-right: 45px;
@@ -1372,7 +1434,7 @@
       width: 250px;
       height: 57px;
       margin: 0 auto;
-      margin-top: 15px;
+      margin-top: 18px;
    }
    .filter__slider-body{
       direction: ltr;
@@ -1421,27 +1483,8 @@
       margin-left: 3px;
    }
 }
-.tovar{
-   color: $color4;
-   padding-top: 45px;
-   &__article{
-      color: $color4;
-      margin-bottom: 12px;
-   }
-   &__article-title{
-      color: $gray;
-   }
-   &__title{
-      max-width: 396px;
-   }
-   &__subtitle{
-      color: $black;
-      max-width: 320px;
-      margin-bottom: 45px;
-   }
-}
 
- .favorites{
+.favorites{
    display: none;
    position: fixed;
    left: 0;
@@ -2116,10 +2159,13 @@
       margin-left: 8px;
    }
    .advice__card {
-      margin: 45px 10px;
+      margin: 45px 7px;
    }
    .recommendation__gods {
-      margin: -45px -10px 104px -10px;
+      margin: -45px -7px 59px -7px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
    }
    &__more {
       margin-bottom: 138px;
@@ -2130,6 +2176,13 @@
    }
    &__noresult {
       margin: 145px 0px 106px 0px;
+   }
+   &__noresult-swiper-container .advice__img {
+      width: 180px;
+      height: 177px;
+   }
+   &__noresult-swiper-container .advice__item {
+      padding: calc(50px + (67 - 50) * ((100vw - 992px) / (1920 - 992))) calc(24px + (43 - 24) * ((100vw - 992px) / (1920 - 992)));
    }
    &__noresult-img {
       width: 67px;
@@ -2169,6 +2222,9 @@
             margin-right: 20px;
          }
       }
+   }
+   &-bar {
+      display: none;
    }
 
 }
@@ -2285,4 +2341,219 @@
    &-title--table{
       max-width: 157px;
    }
+}
+.prodact {
+   &-card {
+      margin-bottom: 93px;
+   }
+   &-card .container {
+      display: flex;
+      justify-content: space-between;
+   }
+   &-card__articul {
+      font-weight: 300;
+   }
+   &-card__articul span {
+      color: $gray;
+   }
+   &-card__info {
+      margin-top: 39px;
+   }
+   &-card__title {
+      margin: 14px 0px 25px 0px;
+      max-width: 396px;
+      font-weight: 300;
+      color: $color4;
+   }
+   &-card__description {
+      max-width: 390px;
+      line-height: 28px;
+      font-weight: 300;
+      color: $black;
+      margin-bottom: 9px;
+   }
+   &-card__color-body {
+         margin: 0px -12px -13px 0px;
+         display: flex;
+         flex-wrap: wrap;
+         max-width: 522px;
+         margin-bottom: 21px;
+   }
+   &-card__color {
+      margin: 0px 12px 13px 0px;
+   }
+   &-card__color-name {
+      color: $gray;
+   }
+   &-card__color-square {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color2;
+      display: block;
+   }
+   &-card__color-triangle {
+      font-size: 12px;
+      color: black;
+   }
+   &-card__color-square,
+   &-card__color-triangle {
+      margin-right: 5px;
+   }
+   &-card__color.open .select__body{
+         width: 78px;
+         height: 184px;
+         padding: 13px 22px 14px 12px;
+         display: flex;
+         flex-wrap: wrap;
+         margin: -11px -8px;
+   }
+   &-card__color .select__body &-card__color-square {
+      margin: 11px 8px;
+   }
+   &-card__size {
+      margin-bottom: 16px;
+   }
+   &-card__size-name {
+      color: $gray;
+      font-weight: 300;
+   }
+   &-card__size-number {
+      color: $color4;
+      font-weight: 300;
+      margin-right: 4px;
+   }
+   &-card__size-triangle {
+      color: $black;
+      font-size: 11px;
+      margin-right: 10px;
+   }
+   &-card__price {
+      font-weight: 300;
+      color: $color4;
+      margin-bottom: 21px;
+   }
+   &-card__button {
+      display: flex;
+      align-items: center;
+      margin-bottom: 78px;
+   }
+   &-card__button .btn-secondary {
+      padding: 20px 95px;
+   }
+   &-card__amount {
+      margin-right: 31px;
+      border: 1px solid $color4;
+      padding: 18px 28px;
+   }
+   &-card__minus {
+      font-size: 15px;
+      cursor: pointer;
+   }
+   &-card__plus {
+      font-style: 13px;
+      cursor: pointer;
+   }
+   &-card__input {
+      width: 51px;
+      text-align: center;
+      border: none;
+      color: $color4;
+   }
+   &-card__favorites {
+      margin-right: 40px;
+      font-size: 26px;
+   }
+   &-card__favorites span {
+      cursor: pointer;
+   }
+   &-card__benefits {
+      align-items: center;
+      display: flex;
+   }
+   &-card__benefits-item {
+      align-items: center;
+      display: flex;
+      color: $color4;
+   }
+   &-card__benefits-item:not(:first-child) {
+      margin-right: 57px;
+   }
+   &-card__benefits-item .icon {
+      font-size: 21px;
+      margin-left: 12px;
+   }
+   &-slider__container {
+      overflow: hidden;
+      margin-bottom: 123px;
+   }
+   &-slider__title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 31px;
+      align-items: center;
+   }
+   &-slider__button {
+      display: flex;
+   }
+   &-slider__button-prev {
+      margin-right: 8.5px;
+   }
+   &-slider__name {
+      font-weight: 300;
+   }
+   .advice__item {
+      padding: calc(32px + (66 - 32) * ((100vw - 992px) / (1920 - 992))) calc(22px + (44 - 22) * ((100vw - 992px) / (1920 - 992)));
+   }
+   .advice__img {
+      width: 180px;
+      height: 177px;
+   }
+   &-recommendation {
+      display: flex;
+      position: relative;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid $border;
+      padding: 17px 7px 26px 25px;
+   }
+   &-recommendation-img {
+      width: 114px;
+      height: 113px;
+      img {
+         height: 100%;
+      }
+   }
+   &-recommendation-name {
+      margin-right: 38px;
+
+   }
+   &-recommendation:hover {
+      .advice__nav {
+         display: block;
+      }
+   }
+   .advice__nav {
+      bottom: 21px;
+      left: 25px;
+   }
+   .advice__press {
+      width: 54px;
+      height: 54px;
+      .icon {
+         font-size: 15px;
+      }
+   }
+   .advice__press:not(:last-child) {
+      margin-bottom: 5px;
+   }
+   &-slider__container-second {
+      overflow: hidden;
+      margin-bottom: 120px;
+   }
+   &-slider-second__button-prev {
+      margin-right: 8.5px;
+   }
+   
+
 }
