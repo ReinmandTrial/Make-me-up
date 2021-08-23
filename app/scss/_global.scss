@@ -1,16 +1,16 @@
 html,
 body {
 	direction: rtl;
-  	height: 100%;
-  	font-family: 'Heebo';
-   	font-weight: normal;
-   	font-style: normal;
-  	overflow-x: hidden;
+	height: 100%;
+	font-family: "Heebo";
+	font-weight: normal;
+	font-style: normal;
+	overflow-x: hidden;
 }
-*{
+* {
 	text-align: right;
 }
-textarea{
+textarea {
 	resize: none;
 }
 .wrapper {
@@ -27,31 +27,28 @@ textarea{
 	flex: 0 0 auto;
 }
 input,
-textarea { 
+textarea {
 	appearance: none;
-	outline:none 
+	outline: none;
 }
 
-
-.container{
-  max-width: 1460px;
-  padding: 0 15px;
-  margin: 0 auto;
+.container {
+	max-width: 1460px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .breadcrumbs {
-
 }
 
-.d-flex{
+.d-flex {
 	display: flex !important;
 }
 
-//Ввод данных конец 
-.burger{
-
+//Ввод данных конец
+.burger {
 }
-.counter{
+.counter {
 	position: absolute;
 	z-index: 1;
 	width: 24px;
@@ -65,29 +62,29 @@ textarea {
 	line-height: 19px;
 	color: $black;
 }
-.content{
-	&__body{
-		.container{
+.content {
+	&__body {
+		.container {
 			display: flex;
 			justify-content: space-between;
 		}
 	}
 }
-.select{
+.select {
 	position: relative;
-	&.open{
-		.select__header{
-			.icon{
+	&.open {
+		.select__header {
+			.icon {
 				transform: rotate(180deg);
 			}
 		}
 	}
-	&__header{
+	&__header {
 		cursor: pointer;
 		display: flex;
 		align-items: center;
 	}
-	&__body{
+	&__body {
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -95,11 +92,11 @@ textarea {
 		z-index: 10;
 		background: $white;
 	}
-	&__input{
+	&__input {
 		display: none;
 	}
 }
-.popup{
+.popup {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -108,16 +105,16 @@ textarea {
 	width: 100%;
 	height: 100vh;
 	display: none;
-	&__body{
+	&__body {
 		width: 100%;
 		height: 100%;
-		background: rgba($black, .3);
+		background: rgba($black, 0.3);
 	}
-	&__content{
+	&__content {
 		background: $white;
 		position: relative;
 	}
-	&-close{
+	&-close {
 		cursor: pointer;
 		position: absolute;
 		right: 32px;
@@ -125,24 +122,24 @@ textarea {
 		font-size: 18px;
 		color: $gray;
 	}
-	&-search__block{
+	&-search__block {
 		display: flex;
 		flex-wrap: wrap;
-		&.open{
-			.popup-search__descr{
+		&.open {
+			.popup-search__descr {
 				display: block;
 			}
-			.popup-search__header{
+			.popup-search__header {
 				padding-bottom: 0;
 			}
 		}
 	}
-	&-search__header{
+	&-search__header {
 		// height: 205px;
 		padding: 83px 0 63px;
 		width: 100%;
 	}
-	&-search__bar{
+	&-search__bar {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -152,13 +149,13 @@ textarea {
 		font-size: 16px;
 		line-height: 22px;
 		color: $color4;
-		&::placeholder{
+		&::placeholder {
 			font-size: 16px;
 			line-height: 22px;
 			color: $color4;
 		}
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -167,28 +164,28 @@ textarea {
 			height: 1px;
 			background: #bbbbbb;
 		}
-		.icon-search{
+		.icon-search {
 			color: $black;
 			font-size: 20px;
 			cursor: pointer;
 		}
 	}
-	&-search__input{
+	&-search__input {
 		border: 0;
 		flex: 1 0 auto;
 	}
-	&-search__descr{
+	&-search__descr {
 		display: none;
 		font-weight: 300;
 		color: $gray;
 		margin: 32px 0 45px;
 	}
-	&-search__body{
+	&-search__body {
 		display: none;
 		width: 100%;
 		height: 100vh;
 	}
-	&-search__more{
+	&-search__more {
 		margin: 0 auto;
 		padding: 13px 35px 14px;
 		margin-top: 78px;
@@ -198,27 +195,27 @@ textarea {
 }
 
 // bread crumbs
-.breadCrumbs{
+.breadCrumbs {
 	font-weight: 300;
 	padding-top: 32px;
 	font-size: 12px;
 	line-height: 18px;
-	.container{
+	.container {
 		display: flex;
 		align-items: center;
 	}
-	&__link{
+	&__link {
 		display: flex;
 		align-items: center;
 		margin-left: 9px;
 		color: $gray;
-		&:hover{
-			.breadCrumbs__text{
+		&:hover {
+			.breadCrumbs__text {
 				text-decoration: underline;
 			}
 		}
 	}
-	&__text{
+	&__text {
 		display: block;
 		margin-left: 9px;
 	}
@@ -226,7 +223,7 @@ textarea {
 //bread crumbs end
 
 // page pagination
-.pagin__cart{
+.pagin__cart {
 	width: 64px;
 	height: 64px;
 	display: flex;
@@ -235,80 +232,80 @@ textarea {
 	border: 1px solid $border;
 	font-size: 14px;
 	line-height: 21px;
-	color: #15161A;
+	color: #15161a;
 	box-sizing: border-box;
 	cursor: pointer;
-	&.active{
+	&.active {
 		border: 1px solid #e48181;
 	}
 }
 //page pagination end
-//check-box 
-.checkbox{
+//check-box
+.checkbox {
 	display: block;
 	position: relative;
 	padding-right: 25px;
 	cursor: pointer;
-	&-input{
+	&-input {
 		position: absolute;
 		width: 1px;
 		height: 1px;
 		overflow: hidden;
 		clip: rect(0 0 0 0);
-		&:checked + .checkbox-style{
-			.icon{
+		&:checked + .checkbox-style {
+			.icon {
 				display: block;
 			}
 		}
 	}
-	&-style{
+	&-style {
 		position: absolute;
 		border: 1px solid $color4;
 		margin-right: -25px;
-      top: 50%;
-      transform: translate(0, -50%);
-      width: 18px;
-      height: 18px;
-		.icon{
+		top: 50%;
+		transform: translate(0, -50%);
+		width: 18px;
+		height: 18px;
+		.icon {
 			display: none;
 			font-size: 11px;
 			margin-top: 3px;
 		}
 	}
-	&.default{
+	&.default {
 		height: 100%;
 	}
 }
 //check-box end
 // radiobox start
-.radio{
+.radio {
 	display: block;
 	position: relative;
 	padding-right: 25px;
 	cursor: pointer;
-	&-input{
+	&-input {
 		position: absolute;
 		width: 1px;
 		height: 1px;
 		overflow: hidden;
 		clip: rect(0 0 0 0);
 	}
-	&-style{
+	&-style {
 		position: absolute;
 		border: 1px solid transparent;
 		margin-right: -25px;
-      top: 50%;
-      transform: translate(0, -50%);
+		top: 50%;
+		transform: translate(0, -50%);
 	}
-	&.default{
-		.radio-style{
+	&.default {
+		.radio-style {
 			border-color: $color4;
 			border-radius: 50%;
 			width: 18px;
 			height: 18px;
 		}
-		.radio-input:checked + .radio-style::after{
-			content: '';
+		.radio-input:checked + .radio-style::after {
+			content: "";
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -322,14 +319,14 @@ textarea {
 }
 //radiobox end
 //dropdown start
-.toggle-block{
-	.icon{
-		&.open{
+.toggle-block {
+	.icon {
+		&.open {
 			transform: rotate(180deg);
 		}
 	}
-	&.open{
-		.toggle-body{
+	&.open {
+		.toggle-body {
 			display: block;
 		}
 	}
@@ -361,3 +358,94 @@ textarea {
 		margin-right: 9px;
 	}
 }
+
+// accordion start
+.accordion {
+	margin-right: 7px;
+	padding: 32px 0;
+	border-top: 1px solid $border;
+	border-bottom: 1px solid $border;
+	font-weight: 300;
+	&:first-child {
+		border-top: transparent;
+	}
+	&.open {
+		.accordion__icon::after {
+			transform: rotate(270deg);
+		}
+		.accordion__icon::before {
+			transform: rotate(180deg);
+		}
+	}
+	&__head {
+		display: flex;
+		cursor: pointer;
+		padding: 32px 0;
+		margin: -32px 0;
+	}
+
+	&__title {
+		line-height: 134.88%;
+	}
+
+	&__icon {
+		position: relative;
+		width: 14px;
+		height: 14px;
+		margin-left: 39px;
+		margin-right: -7px;
+		transform: translate(0, 8px);
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			background: $color4;
+			transition: all 0.4s ease 0s;
+		}
+		&::before {
+			top: 6.3px;
+			left: 1px;
+			width: 12px;
+			height: 1.4px;
+		}
+		&::after {
+			// transform: rotate(-90deg);
+			left: 6.3px;
+			top: 1px;
+			width: 1.4px;
+			height: 12px;
+		}
+	}
+
+	&__body {
+		display: none;
+		margin-top: 25px;
+		padding-right: 46px;
+		line-height: 1.5;
+	}
+
+	&__text {
+		max-width: 666px;
+	}
+}
+
+// accordion end
+
+// tabs start
+.tabs {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #ececec;
+	&__item {
+		box-sizing: content-box;
+		padding: 0 12px 23px;
+		border: 1px solid transparent;
+		&:not(:last-child) {
+			margin-left: 49px;
+		}
+		&.active {
+			border-bottom: 1px solid #d93d4f;
+		}
+	}
+}
+// tabs end
