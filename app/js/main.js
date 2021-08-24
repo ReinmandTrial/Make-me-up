@@ -386,6 +386,30 @@ $(document).ready(function () {
 
 	}
 })
+$(document).ready(function () {
+	if ($('body').find('div').hasClass('filter__slider')) {
+		// alert();
+		var slider = document.getElementById('slider-mobile');
+
+		noUiSlider.create(slider, {
+			start: [4, 8],
+			connect: true,
+			range: {
+				'min': 4,
+				'max': 8
+			}
+		});
+		var dateValues = [
+			document.getElementById('slider-lower-mobile'),
+			document.getElementById('slider-upper-mobile')
+		];
+
+		slider.noUiSlider.on('update', function (values, handle) {
+			dateValues[handle].innerHTML = values[handle];
+		});
+
+	}
+})
 //slider end
 
 //burger mobile 
@@ -485,3 +509,15 @@ $('.prodact-card__minus').on('click', function () {
 	Block.find('.prodact-card__input').val(kol);
 })
 //amount prodact-page end
+//catalog block 
+$('[data-catalog]').on('click',function(){
+	var btn = $(this);
+   var id = btn.attr('data-catalog');
+	var $block = $('#' + id);
+	if($block.length == 0)return;
+	$block.addClass('open');
+})
+$('.js-catalog-close').on('click',function(){
+	$(this).closest('.js-catalog-block').removeClass('open');
+})
+//catalog block end 

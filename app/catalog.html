@@ -967,9 +967,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="catalog__sort-mobile">
+								<div class="catalog__sort-mobile js-catalog-block" id="sort-mobile">
 									<div class="catalog__sort-mobile-body">
-										<div class="catalog__sort-mobile-btn-close">
+										<div class="catalog__sort-mobile-btn-close js-catalog-close">
 											<span class="icon icon-close"></span>
 										</div>
 										<div class="catalog__sort-mobile-content h4">
@@ -1005,20 +1005,20 @@
 										<button class="catalog__sort-mobile-btn btn btn-contour">מיון</button>
 									</div>
 								</div>
-								<div class="filter-mobile">
+								<div class="filter-mobile js-catalog-block" id="filter-mobile">
 									<div class="filter-mobile__body">
 										<div class="filter-mobile__btn-close-box">
-											<div class="filter-mobile__btn-close">
+											<div class="filter-mobile__btn-close js-catalog-close">
 												<span class="icon icon-close"></span>
 											</div>
 										</div>
 										<div class="filter-mobile__content">
 											<div class="filter__slider">
 												<h3 class="filter__slider-title h3">מחיר</h3>
-												<div class="filter__slider-body slider" id="slider"></div>
+												<div class="filter__slider-body slider" id="slider-mobile"></div>
 												<div class="filter__slider-counter">
-													<span class="filter__slider-upper" id="slider-upper"> 8.00
-													</span> ₪ - <span class="filter__slider-lower" id="slider-lower"> 4.00 </span>
+													<span class="filter__slider-upper" id="slider-upper-mobile"> 8.00
+													</span> ₪ - <span class="filter__slider-lower" id="slider-lower-mobile"> 4.00 </span>
 													₪
 													:מחיר
 												</div>
@@ -1345,8 +1345,8 @@
 										</div>
 									</div>
 								</div>
-								<button class="catalog__header-btn catalog__sort-btn">מִיוּן</button>
-								<button class="catalog__fiter-btn catalog__header-btn">סינון</button>
+								<button class="catalog__header-btn catalog__sort-btn" data-catalog="sort-mobile">מִיוּן</button>
+								<button class="catalog__fiter-btn catalog__header-btn" data-catalog="filter-mobile">סינון</button>
 							</div>
 							<div class="catalog__list">
 								<div class="catalog__item">
