@@ -181,6 +181,11 @@
 
 // MAX-WIDTH 1249.98PX breakpoints START
 @media (max-width: 1249.98px) {
+    .prodact-card {
+        .container {
+            flex-direction: column;
+        }
+    }
     .login-body {
         &__signup-body {
             display: block;
@@ -1260,6 +1265,145 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+    .prodact-slider {
+        &__container {
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 21px);
+            display: flex;
+        }
+        &__button {
+            display: none;
+        }
+    }
+    .prodact-slider {
+        &__container-second {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 65px;
+        }
+    }
+    .prodact-descr {
+        margin-bottom: 48px;
+        .tabs {
+            margin-bottom: 20px;
+            &__item {
+                &.h4 {
+                    font-size: 16px;
+                }
+                padding-bottom: 14px;
+                &:not(:last-child) {
+                    margin-left: 32px;
+                }
+            }
+        }
+        &__text-block {
+            margin-bottom: 25px;
+        }
+    }
+    .prodact {
+        &-card {
+            margin-bottom: unset;
+        }
+        &-card__articul.mobile,
+        &-card__title.mobile,
+        &-card__favorites.mobile {
+            display: block;
+        }
+        &-card__articul,
+        &-card__title,
+        &-card__favorites {
+            display: none;
+        }
+        &-card__title {
+            margin-top: 13px;
+            margin-bottom: 10px;
+        }
+        &-card__articul {
+            margin-bottom: 19px;
+        }
+        &-card__info {
+            display: flex;
+            flex-direction: column;
+        }
+        &-card__description {
+            margin-bottom: 40px;
+            order: 7;
+        }
+        &-card__color-body {
+            margin-bottom: 16px;
+        }
+        &-card__size {
+            padding-bottom: 13px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        &-card__price-box {
+            max-width: 290px;
+        }
+        &-card__price {
+            margin-bottom: 8px;
+        }
+        &-card__color {
+            margin: 5px 9px;
+            .select__header {
+                width: 80px;
+                justify-content: space-between;
+            }
+        }
+        &-card__color-body {
+            margin: -5px -9px;
+            margin-bottom: 8px;
+        }
+        &-card__color-name.h4,
+        &-card__size-number.h4,
+        &-card__size-name.h4 {
+            font-size: 16px;
+        }
+        &-card__color-square {
+            width: 18px;
+            height: 18px;
+        }
+        &-card__button {
+            margin-bottom: 21px;
+            .btn-secondary {
+                padding: 17.5px 56px;
+            }
+        }
+        &-card__amount {
+            align-items: center;
+            padding: 16px 17px;
+            margin-right: 9px;
+            font-size: 15px;
+        }
+        &-card-plus,
+        &-card-minus {
+            font-size: 14px;
+        }
+        &-card__input {
+            transform: translateY(-2px);
+            width: 20px;
+        }
+        &-card__benefits-item {
+            flex-direction: column;
+            &:not(:first-child) {
+                margin-right: unset;
+            }
+            .icon {
+                margin-left: unset;
+                margin-bottom: 8px;
+            }
+        }
+        &-card__benefits {
+            max-width: 290px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    }
     .pagin__cart {
         font-size: 12px;
         width: 32px;

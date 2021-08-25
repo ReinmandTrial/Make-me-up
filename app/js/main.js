@@ -274,7 +274,7 @@ new Swiper('.prodact-slider__container-second', {
 			slidesPerView: 3,
 		},
 		320: {
-			slidesPerView: 2,
+			slidesPerView: 1,
 			spaceBetween: 10
 		},
 	}
@@ -510,14 +510,14 @@ $('.prodact-card__minus').on('click', function () {
 })
 //amount prodact-page end
 //catalog block 
-$('[data-catalog]').on('click',function(){
+$('[data-catalog]').on('click', function () {
 	var btn = $(this);
-   var id = btn.attr('data-catalog');
+	var id = btn.attr('data-catalog');
 	var $block = $('#' + id);
-	if($block.length == 0)return;
+	if ($block.length == 0) return;
 	$block.addClass('open');
 })
-$('.js-catalog-close').on('click',function(){
+$('.js-catalog-close').on('click', function () {
 	$(this).closest('.js-catalog-block').removeClass('open');
 })
-//catalog block end 
+//catalog block end
