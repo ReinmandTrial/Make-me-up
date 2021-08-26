@@ -1867,6 +1867,16 @@
             padding-right: 40px;
         }
     }
+    .log-bar {
+        &__input-body {
+            top: calc(100% + 5px);
+            width: 100%;
+            min-width: unset;
+        }
+        &__input-text {
+            height: 40px;
+        }
+    }
 
     .favorites {
         &__item,

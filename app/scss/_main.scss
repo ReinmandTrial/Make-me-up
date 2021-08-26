@@ -2375,6 +2375,12 @@
    &__flesh {
       .log-bar {
          padding-top: 31px;
+         position: relative;
+         &.open {
+            .log-bar__input-body {
+               display: block;
+            }
+         }
       }
    }
 
@@ -2390,6 +2396,27 @@
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+   }
+   &__input-body {
+      position: absolute;
+      top: calc(100% + 16px);
+      right: 3px;
+      background: #ffffff;
+      box-shadow: 0px 6px 34px rgba(0, 0, 0, 0.14);
+      min-width: calc(100% + 32px);
+      z-index: 20;
+      display: none;
+   }
+   &__input-text {
+      padding: 4px 12px 0 30px;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      width: 100%;
+      transition: 0.3s;
+      &:hover {
+         background: $background;
+      }
    }
 
    &__input-placeholder {
