@@ -17,11 +17,14 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	// ii
+	height: 100%;
 }
 
 .main {
 	flex: 1 0 auto;
 	position: relative;
+	// min-height: 100%;
 }
 .footer {
 	flex: 0 0 auto;
@@ -36,6 +39,7 @@ textarea {
 	max-width: 1460px;
 	padding: 0 15px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .breadcrumbs {
@@ -66,6 +70,7 @@ textarea {
 	color: $black;
 }
 .content {
+	height: 100%;
 	&__body {
 		.container {
 			display: flex;
@@ -362,25 +367,23 @@ textarea {
 	}
 }
 
-
 .catalog,
 .prodact,
 .contact-us,
 .brands {
-   .breadcrumbs {
-      	display: block;
-      	margin-top: 32px;
-      	.icon-triangle-left {
-		font-size: 7.74px;
-      }
-	  &__link {
-		font-size: 12px;
-		&:not(:first-child) {
-		   margin-right: 14.74px;
+	.breadcrumbs {
+		display: block;
+		margin-top: 32px;
+		.icon-triangle-left {
+			font-size: 7.74px;
 		}
-
-	  }
-   }
+		&__link {
+			font-size: 12px;
+			&:not(:first-child) {
+				margin-right: 14.74px;
+			}
+		}
+	}
 }
 // accordion start
 .accordion {

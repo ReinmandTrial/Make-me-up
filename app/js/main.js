@@ -270,8 +270,11 @@ new Swiper('.prodact-slider__container-second', {
 		991: {
 			slidesPerView: 4,
 		},
-		576: {
+		768: {
 			slidesPerView: 3,
+		},
+		576: {
+			slidesPerView: 2,
 		},
 		320: {
 			slidesPerView: 1,
