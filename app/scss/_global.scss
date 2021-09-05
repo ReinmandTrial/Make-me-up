@@ -462,6 +462,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	border-bottom: 1px solid #ececec;
+	font-weight: 300;
 	&__item {
 		box-sizing: content-box;
 		padding: 0 12px 23px;
@@ -472,6 +473,7 @@ textarea {
 		}
 		&.active {
 			border-bottom: 1px solid $textColor2;
+			font-weight: 400;
 		}
 	}
 }

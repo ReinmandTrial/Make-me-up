@@ -1,10 +1,22 @@
 // const { default: Swiper } = require("swiper");
 
+// const { each } = require("jquery");
+
 //select
 $('.select__header').on('click', function () {
 	var btn = $(this);
 	var select = btn.closest('.select');
 	var selectS = select.closest('.nav').find('.select');
+	var selectBlock = select.parent();
+	var selectBlockItem = selectBlock.find('.select');
+
+	if(selectBlock.hasClass('js-select-block')){
+		$(selectBlockItem).each(function(){
+			$(this).removeClass('open');
+			$(this).find('.select__body').fadeOut();
+		})
+	}
+
 	if (select.hasClass('nav__item') && !select.hasClass('open')) {
 		$(selectS).each(function () {
 			$(this).removeClass('open');
@@ -283,6 +295,52 @@ new Swiper('.prodact-slider__container-second', {
 	}
 });
 
+var galleryImg = [];
+$('.gallery-slider img').each(function(){
+	var src = $(this).attr('src');
+	galleryImg.push(src);
+})
+new Swiper('.gallery-slider', {
+	// навигация, кнопки
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	mousewheel: false,
+	slidesPerView: 1,
+	loop:true,
+	pagination: {
+      el: '#swiper-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<div class="' + className + '"><img src="' + galleryImg[index] + '" alt=""></div>';
+        },
+    },
+
+	breakpoints: {
+		// 991: {
+		// 	slidesPerView: 4,
+		// },
+		768: {
+			navigation: true,
+		},
+		// 576: {
+		// 	slidesPerView: 2,
+		// },
+		320: {
+			navigation: false
+		},
+	}
+});
+
+
+// (function($){
+// 	$(window).on("load",function(){
+// 		 $(".js-scroll").mCustomScrollbar();
+// 	});
+// });
+
+$(".js-scroll").mCustomScrollbar();
 //popup
 //popup open
 $('.btn-popup').on('click', function () {

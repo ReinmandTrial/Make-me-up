@@ -21,6 +21,7 @@
     "swiper": "^6.7.5"
   },
   "dependencies": {
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
     "nouislider": "^15.2.0"
   }
 }
