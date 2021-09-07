@@ -7,7 +7,6 @@
 }
 
 @media (min-width: 1920.98px) {
-
     .banner,
     .blog {
         background-size: 100%;
@@ -67,7 +66,6 @@
     }
 
     .blog {
-
         &__swiper-btn-prev,
         &__swiper-btn-next {
             top: unset;
@@ -98,6 +96,15 @@
 
 // MAX-WIDTH 1399.98PX breakpoints START
 @media (max-width: 1399.98px) {
+    .checkout {
+        &__rightside-content {
+            padding-left: 40px;
+        }
+        &__leftside-content {
+            padding-left: 15px;
+            padding-right: 40px;
+        }
+    }
     .profile {
         .leftSide__main {
             margin-right: unset;
@@ -155,7 +162,8 @@
             margin-bottom: auto;
             flex: 1 0 auto;
             margin-left: auto;
-            padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320))) calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))) 0px 0px;
+            padding: calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)))
+                calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320))) 0px 0px;
         }
 
         &__big,
@@ -594,6 +602,18 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+    .checkout {
+        .content {
+            flex-direction: column;
+        }
+        &__leftside-content {
+            padding-right: 15px;
+            padding-left: 40px;
+        }
+        .favorites__item {
+            max-width: 500px;
+        }
+    }
     .profile {
         &__body {
             flex-direction: column;
@@ -645,7 +665,6 @@
     }
 
     .prodact {
-
         &-card__articul.mobile,
         &-card__title.mobile,
         &-card__favorites.mobile {
@@ -723,7 +742,7 @@
         &__header-btn {
             display: block;
             margin: 0 15px;
-            &:not(:first-child){
+            &:not(:first-child) {
                 margin: 0 15px;
             }
         }
@@ -924,7 +943,8 @@
 
         &__item {
             // height: calc(205px + (356 - 205) * ((100vw - 576px) / (991 - 576)));
-            padding: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320))) calc(29px + (24 - 29) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320)))
+                calc(29px + (24 - 29) * ((100vw - 320px) / (991 - 320)));
         }
 
         &__img {
@@ -980,7 +1000,8 @@
         }
 
         &__content .advice__item {
-            padding: calc(39px + (10 - 39) * ((100vw - 320px) / (991 - 320))) calc(29px + (10 - 29) * ((100vw - 320px) / (991 - 320)));
+            padding: calc(39px + (10 - 39) * ((100vw - 320px) / (991 - 320)))
+                calc(29px + (10 - 29) * ((100vw - 320px) / (991 - 320)));
         }
 
         &__inside {
@@ -1002,7 +1023,6 @@
 
     .recommendation {
         &__gods {
-
             // display: grid;
             // grid-template-columns: 1fr 1fr;
             // grid-column-gap:  8px;
@@ -1089,7 +1109,8 @@
             text-overflow: ellipsis;
         }
 
-        &-subtitle {}
+        &-subtitle {
+        }
 
         &-btn {
             width: 75px;
@@ -1121,7 +1142,8 @@
 
         &-body {
             // margin-top: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320)));
-            margin: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320))) 0px calc(32px + (134 - 32) * ((100vw - 320px) / (991 - 320))) 0px;
+            margin: calc(15px + (59 - 15) * ((100vw - 320px) / (991 - 320))) 0px
+                calc(32px + (134 - 32) * ((100vw - 320px) / (991 - 320))) 0px;
 
             .btn-contour {
                 margin-bottom: calc(15px + (22 - 15) * ((100vw - 320px) / (991 - 320)));
@@ -1133,7 +1155,8 @@
         }
 
         &-body__password {
-            margin: calc(4px + (14 - 4) * ((100vw - 320px) / (991 - 320))) 0px calc(27px + (42 - 27) * ((100vw - 320px) / (991 - 320))) 0px;
+            margin: calc(4px + (14 - 4) * ((100vw - 320px) / (991 - 320))) 0px
+                calc(27px + (42 - 27) * ((100vw - 320px) / (991 - 320))) 0px;
             margin-right: auto;
         }
 
@@ -1224,7 +1247,6 @@
     }
 
     .search {
-
         .recommendation__gods .advice__card,
         .recommendation__gods .advice__card:not(:last-child) {
             margin: 15px 7px;
@@ -1243,24 +1265,24 @@
             height: calc(77px + (177 - 77) * ((100vw - 320px) / (991 - 320)));
         }
     }
-    #filter-mobile{
-        .filter__list{
+    #filter-mobile {
+        .filter__list {
             margin-top: 20px;
         }
     }
-    .profile{
-        .nav__link{
-            &:first-child{
+    .profile {
+        .nav__link {
+            &:first-child {
                 padding-left: 0;
             }
-            &:last-child{
+            &:last-child {
                 padding-right: 0;
             }
         }
-        .rightSide-bg{
+        .rightSide-bg {
             left: -10px;
         }
-        .leftSide{
+        .leftSide {
             padding-right: 0;
         }
     }
@@ -1349,9 +1371,9 @@
             font-size: 9px;
             line-height: 13px;
         }
-        &__header-btn{
+        &__header-btn {
             margin: 0 5px;
-            &:not(:first-child){
+            &:not(:first-child) {
                 margin: 0 5px;
             }
         }
@@ -1430,7 +1452,6 @@
     }
 
     .articles {
-
         // padding: 45px 0px;
         .advice {
             &__content {
@@ -1553,7 +1574,8 @@
             font-size: 20px;
         }
 
-        &-body__signup-subtitle {}
+        &-body__signup-subtitle {
+        }
     }
 
     .search {
@@ -1613,7 +1635,8 @@
         }
 
         .gallery-img {
-            padding: calc(25px + (40 - 25) * ((100vw - 320px) / (767 - 320))) 0 calc(39px + (123 - 39) * ((100vw - 320px) / (767 - 320)));
+            padding: calc(25px + (40 - 25) * ((100vw - 320px) / (767 - 320))) 0
+                calc(39px + (123 - 39) * ((100vw - 320px) / (767 - 320)));
 
             img {
                 width: unset;
@@ -1627,6 +1650,140 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+    .checkout {
+        &__rightside {
+            padding-bottom: 27px;
+        }
+        &__rightside-content {
+            padding-left: 15px;
+        }
+        .breadcrumbs {
+            margin-top: 11px;
+            margin-bottom: 22px;
+        }
+        .title {
+            margin-bottom: 32px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__sign-up {
+            margin-right: 12px;
+        }
+        &__check-form-descr {
+            max-width: 240px;
+        }
+        &__section {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+        &__textarea {
+            margin-top: 14px;
+            padding: 8px 13px;
+            height: 82px;
+        }
+        &__contacts-inputs {
+            margin-left: unset;
+            margin-right: unset;
+        }
+        .log-bar {
+            margin: unset;
+            width: 100%;
+            padding-top: 31px;
+        }
+        &__delivery {
+            margin-top: 16px;
+        }
+        .radio {
+            &__price {
+                margin-right: -1px;
+                font-size: 12px;
+            }
+            &__text-block {
+                margin-right: 32px;
+            }
+            &__descr {
+                font-size: 10px;
+            }
+        }
+        &__leftside {
+            padding-bottom: 83px;
+        }
+        &__leftside-content {
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        .favorites__item {
+            &:first-child {
+                border-top: unset;
+            }
+        }
+        &__products {
+            margin-bottom: 23px;
+        }
+        &__price-row:last-child {
+            margin-bottom: 17px;
+        }
+        .cart__gift {
+            &-text {
+                width: 49%;
+            }
+            &-input {
+                width: 51%;
+            }
+        }
+        .cart__total {
+            margin-top: 25px;
+            margin-bottom: 41px;
+            &-price {
+                font-size: 16px;
+                margin-right: 8px;
+            }
+            &-price-before {
+                margin-bottom: 2px;
+            }
+        }
+        &__payment-radio {
+            margin: 0 -4px;
+            margin-top: 8px;
+            display: flex;
+            margin-bottom: 31px;
+        }
+        .radio.payment {
+            margin: 0 4px;
+            width: calc(50% - 8px);
+            flex-direction: column;
+            padding-right: 41px;
+            padding-bottom: 17px;
+            padding-left: 5px;
+            padding-top: 17px;
+            min-height: 128px;
+            justify-content: space-between;
+            align-items: start;
+
+            &:last-of-type {
+                margin-bottom: unset;
+            }
+            &:not(:last-of-type) {
+                margin-bottom: unset;
+            }
+            .radio__descr {
+                margin-right: unset;
+                font-size: 12px;
+            }
+            .radio__images-box {
+                margin-right: unset;
+            }
+            .radio-style {
+                top: 24px;
+            }
+        }
+        &__btn {
+            margin-top: 39px;
+            min-height: 56px;
+        }
+    }
     .cart {
         .content {
             padding-bottom: 21px;
@@ -1846,11 +2003,11 @@
             margin-left: 15px;
         }
 
-        .prodact-card__size {}
+        .prodact-card__size {
+        }
     }
 
     .prodact {
-
         &-card__title {
             margin-top: 13px;
             margin-bottom: 10px;
@@ -1901,8 +2058,6 @@
             width: 18px;
             height: 18px;
         }
-
-
 
         &-card__amount {
             align-items: center;
@@ -1986,9 +2141,9 @@
         .title {
             margin: 10px 0 20px;
         }
-        &__header-btn{
+        &__header-btn {
             margin: 0;
-            &:not(:first-child){
+            &:not(:first-child) {
                 margin: 0;
                 margin-right: -1px;
             }
@@ -2167,7 +2322,8 @@
             margin-bottom: 22px;
         }
 
-        &__schedule-title {}
+        &__schedule-title {
+        }
 
         &__schedule-time {
             font-size: 14px;
@@ -2454,7 +2610,6 @@
     }
 
     .favorites {
-
         &__item,
         &__body {
             width: unset;
