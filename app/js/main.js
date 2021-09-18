@@ -318,28 +318,14 @@ new Swiper('.gallery-slider', {
     },
 
 	breakpoints: {
-		// 991: {
-		// 	slidesPerView: 4,
-		// },
 		768: {
 			navigation: true,
 		},
-		// 576: {
-		// 	slidesPerView: 2,
-		// },
 		320: {
 			navigation: false
 		},
 	}
 });
-
-
-// (function($){
-// 	$(window).on("load",function(){
-// 		 $(".js-scroll").mCustomScrollbar();
-// 	});
-// });
-
 $(".js-scroll").mCustomScrollbar();
 //popup
 //popup open
@@ -582,3 +568,21 @@ $('.js-catalog-close').on('click', function () {
 	$(this).closest('.js-catalog-block').removeClass('open');
 })
 //catalog block end
+
+//input 
+$('.js-input, .js-placeholder').on('click',function(){
+	$(this).closest('.js-input-block').find('.js-placeholder').addClass('d-none');
+	$(this).closest('.js-input-block').find('.js-input').focus();
+})
+$(document).on('click', function (e) {
+	if (!$(e.target).closest(".js-input").length && !$(e.target).closest(".js-placeholder").length) {
+		var body = $('body');
+		$(body.find('.js-input-block')).each(function(){
+			if($(this).find('.js-input').val() == ''){
+				$(this).find('.js-placeholder').removeClass('d-none');
+			}
+		})
+	}
+	e.stopPropagation();
+});
+//input end
