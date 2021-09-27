@@ -4737,3 +4737,235 @@
       margin-top: 45px;
    }
 }
+
+.affiliates {
+   .leftSide {
+      margin-top: 56px;
+      padding-bottom: unset;
+   }
+   .leftSide__main {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__title {
+      margin-bottom: 35px;
+      font-weight: 300;
+      color: $color4
+   }
+   &__description {
+      font-weight: 300;
+      margin-bottom: 14px;
+      max-width: 571px;
+      color: $color4
+   }
+   &__link  {
+      color: $color4;
+      text-decoration: underline;
+      font-size: 12px;
+      line-height: 18px;
+      display: block;
+      margin-bottom: 8px;
+   }
+   &__input {
+      margin-bottom: 97px;
+      max-width: 465px;
+   }
+   &__img-block {
+      position: relative;
+      width: 325px;
+      height: 400px;
+      margin-top: 41px;
+   }
+   &__img-background {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url(../images/affiliates__background.png) no-repeat;
+      width: 285px;
+      height: 360px;
+   }
+   &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../images/affiliates__img.png) no-repeat;
+      width: 277px;
+      height: 350px;
+   }
+   .btn-primary {
+      margin-bottom: 187px;
+   }
+   &__text {
+      color: $color4;
+      font-weight: 300;
+      max-width: 510px;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+   &__text-small {
+      max-width: 399px;
+   }
+   &__info {
+      margin-bottom: 70px;
+   }
+   &__mipro {
+      width: 138px;
+      height: 36px;
+      margin-bottom: 34px;
+   }
+   &__mipro-title {
+      color: $color4;
+      font-weight: 300;
+      margin-bottom: 35px;
+   }
+   &__mipro-subtitle {
+      font-weight: 300;
+      color:$color4;
+   }
+   .btn-primary {
+      padding: 13px 30px 14px;
+   }
+}
+.affiliates-mipro {
+   .affiliates__img-block {
+      margin-top: unset;
+   }
+   .affiliates__img {
+      background: url(../images/affiliates__main.png);
+   }
+   .log-bar {
+      margin-bottom: 36px;
+      width: 524px;
+   }
+   &__description {
+      font-size: 12px;
+      color: $color4;
+      font-weight: 300;
+      max-width: 210px;
+      margin-bottom: 19px;
+   }
+   &__file-box {
+      width: 219px;
+      height: 139px;
+      border: 1px dashed $gray;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+   }
+   &__file-ball {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $background;
+      display: flex;
+      justify-content: center;
+   }
+   &__file-plus {
+      font-size: 17px;
+      color: $color4; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .btn-primary {
+      margin-bottom: 214px;
+   }
+}
+.affiliates-join {
+   .breadcrumbs {
+      display: block;
+   }
+   &__content {
+
+   }
+   &__title {
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: $color4;
+      
+   }
+   &__subtitle {
+      font-weight: 300;
+      margin-bottom: 67px;
+      color:$color4;
+      max-width: 407px;
+   }
+   &__info-title {
+      font-weight: 300;
+      margin-bottom: 25px;
+      color:$color4;
+   }
+   &__info {
+      &:not(:last-child) {
+         margin-bottom: 49px;
+      }
+      &:last-child {
+         margin-bottom: 105px;
+         .affiliates-join__info-subtitle {
+            max-width: 474px;
+         }
+      }
+   }
+   &__info-subtitle {
+      color:$color4;
+      max-width: 405px;
+   }
+   &__main {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 49px;
+   }
+   .affiliates__img-block {
+      margin-top: 25px;
+   }
+   .contact-us__wrapper-page-faq {
+      padding-top: unset;
+      padding-bottom: unset;
+      width: 895px;
+      margin-bottom: 76px;
+   }
+   .accordion__title {
+      color: $color4;
+      font-weight: 300;
+   }
+   .accordion__text {
+      max-width: 734px;
+   }
+   .accordion__head {
+      padding: 19px 0px;
+      margin: -19px 0;
+   }
+   &__agitation {
+      font-weight: 300;
+      color: $color4;
+      margin-bottom: 24px;
+   }
+   .btn-contour {
+      padding: 20px 143px;
+      margin-bottom: 363px;
+   }
+   .affiliates__img-block {
+      width: 501px;
+      height: 617px;
+   }
+   .affiliates__img-background {
+      background: url(../images/affiliates__background-join.png) no-repeat;
+      width: 439px;
+      height: 556px;
+   }
+   .affiliates__img {
+      background: url(../images/affiliates__img-join.png) no-repeat;
+      width: 427px;
+      height: 541px;
+   }
+   &__mobile-title {
+      display: none;
+   }
+   &__mobile-description.h5{
+      font-size: 12px;
+      display: none;
+   }
+}

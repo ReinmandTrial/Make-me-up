@@ -90,6 +90,11 @@
             bottom: 11%;
         }
     }
+    .affiliates-join {
+        .contact-us__wrapper-page-faq {
+            width: 700px;
+        }
+    }
 }
 
 // MAX-WIDTH 1600PX breakpoints END
@@ -224,6 +229,21 @@
         // &__signup-block {
         //     width: unset;
         // }
+    }
+    .affiliates {
+        &__column-first {
+            padding-left: 20px;
+        }
+    }
+    .affiliates-mipro {
+        .log-bar {
+            width: unset;
+        }
+    }
+    .affiliates-join {
+        .contact-us__wrapper-page-faq {
+            max-width: 500px;
+        }
     }
 }
 
@@ -594,6 +614,88 @@
 
         &__title {
             margin-top: 18px;
+        }
+    }
+    // .affiliates-join {
+    //     .affiliates__img {
+    //         width: 277px;
+    //         height: 350px;
+    //     }
+    //     .affiliates__img-background {
+    //         width: 285px;
+    //         height: 360px;
+    //     }
+    //     .affiliates__img-block {
+    //         width: 325px;
+    //         height: 400px;
+    //     }
+    // }
+    .affiliates-join {
+        &__left {
+            order: -1;
+        }
+        &__main {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            display: none;
+        }
+        &__subtitle {
+            display: none;
+        }
+        .contact-us__wrapper-page-faq {
+            max-width: unset;
+            width: unset;
+            margin-bottom: 38px;
+        }
+        &__info-subtitle {
+            max-width: unset;
+        }
+        &__info:last-child {
+            .affiliates-join__info-subtitle {
+                max-width: unset;
+            }
+        }
+        .accordion__text {
+            max-width: unset;
+        }
+        &__mobile-title {
+           display: block;
+           margin-bottom: 7px;
+           font-weight: 300;
+           color: $color4
+        }
+        &__mobile-description.h5{
+           display: block;
+           font-weight: 300;
+           color: $color4;
+           margin-bottom: 20px;
+        }
+        .affiliates__img-block {
+            margin: 0 auto;
+            margin-bottom: 17px;
+            width: 288px;
+            height: 218px;
+        }
+        .affiliates__img {
+            width: 259px;
+            height: 182px;
+            background: url(../images/affiliates__img-mobile.png);
+        }
+        .affiliates__img-background {
+            width: 259px;
+            height: 182px;
+            background: url(../images/affiliates__background-mobile.png);
+        }
+        &__info {
+
+        }
+        &__info:last-child {
+            margin-bottom: 32px;
+        }
+        .btn-contour {
+            margin-bottom: 48px;
         }
     }
 }
@@ -1213,6 +1315,11 @@
             margin-top: 27px;
         }
     }
+    .affiliates {
+        .log-bar {
+            padding: calc(42px + (41 - 42) * ((100vw - 320px) / (991 - 320))) 0px 0px 0px;
+        }
+    }
 
     .signup-law {
         margin: 27px 0px 22px 0px;
@@ -1292,6 +1399,7 @@
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
+    
     .profile-orders {
         .leftSide {
             padding-right: unset;
@@ -1644,6 +1752,141 @@
             }
         }
     }
+    .affiliates {
+        .leftSide__main {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .leftSide {
+            margin-top: 25px;
+        }
+        &__column-second {
+            order: -1;
+            margin-bottom: 13px;
+            display: flex;
+            justify-content: center;
+        }
+        &__img-block {
+            margin-top: unset;
+        }
+        &__title {
+            margin-bottom: 13px;
+        }
+        &__description {
+            margin-bottom: 10px;
+        }
+        &__link {
+            margin-bottom: 14px;
+        }
+        &__input {
+            margin-bottom: 32px;
+        }
+        .btn-primary {
+            margin-bottom: 46px;
+        }
+        &__column-first {
+            padding-left: unset;
+        }
+        &__img-block {
+           width: 288px;
+           height: 212px;
+        }
+        &__img-background {
+            background: url(../images/affiliates__background-mobile.png) no-repeat;
+            width: 259px;
+            height: 182px;
+            bottom: 0;
+            right: unset;
+            left: 0;
+            
+        }
+        &__img {
+           background: url(../images/affiliates__img-mobile.png) no-repeat;
+           width: 259px;
+           height: 182px;
+           top: 0;
+           left: unset;
+           right: 0;
+        }
+        &__info {
+            margin-bottom: 35px;
+        }
+    }
+    .affiliates-mipro {
+        .affiliates__img {
+            background: url(../images/affiliates__main-mobile.png);
+        }
+        .log-bar {
+            margin-bottom: 34px;
+        }
+        &__description {
+            max-width: 241px;
+            margin-bottom: 14px;
+        }
+        &__file-box {
+            margin-bottom: 29px;
+            width: unset;
+        }
+        .btn-primary {
+           margin-bottom: 64px;
+        }
+    }
+    .affiliates__mipro {
+        width: 104px;
+        height: 27px;
+        margin-bottom: 12px;
+        &-title {
+            margin-bottom: 15px;
+        }
+
+    }
+    .affiliates__text:not(:last-child) {
+        margin-bottom: 29px;
+    }
+    .affiliates-join {
+        &__main {
+            margin-top: 14px;
+        }
+        .breadcrumbs {
+            margin-top: 9px;
+        }
+        .breadcrumbs__link {
+            font-size: 10px;
+        }
+        &__mobile-title {
+            max-width: 256px;
+        }
+        &__info-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &__info:not(:last-child) {
+            margin-bottom: 32px;
+        }
+        &__info:last-child {
+            margin-bottom: 32px;
+        }
+        .accordion__head {
+            padding: 17px 0px;
+            margin: -17px 0px;
+            align-items: center;
+        }
+        .accordion {
+            padding: 17px 0px;
+        }
+        .accordion__title {
+            font-size: 16px;
+        }
+        .accordion__icon {
+            margin-left: 10px;
+            transform: unset;
+        }
+        &__agitation.h2 {
+            font-size: 20px;
+            margin-bottom: 17px;
+        }
+    }
+
 }
 
 // MAX-WIDTH 767.98PX breakpoints END
@@ -2628,6 +2871,20 @@
 
         &__more button {
             width: 100%;
+        }
+    }
+    .affiliates {
+        &__description {
+            max-width: 291px;
+        }
+        &__title {
+            max-width: 150px;
+        }
+    }
+    .affiliates-join {
+        .btn-contour {
+            width: 100%;
+            padding: 13.5px 0px;
         }
     }
 }
