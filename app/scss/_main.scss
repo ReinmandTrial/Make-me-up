@@ -6182,3 +6182,11 @@
    left: 0;
    top: 573px;
 }
+.affiliates-marketing {
+   .affiliates__img {
+      background: url(../images/affiliates-marketing-img.png);
+   }
+}
+.accordion:first-child {
+   border-top: rgba(0, 0, 0, 0.1);
+}

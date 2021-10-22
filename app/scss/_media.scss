@@ -858,6 +858,11 @@
             margin-bottom: 48px;
         }
     }
+	.affiliates-marketing {
+		.affiliates__img {
+			background: url(../images/affiliates__main-mobile.png);
+		}
+	}
 	.header {
 		&__phone {
 			display: none;
